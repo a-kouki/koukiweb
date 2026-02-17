@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "one": "Início",
+    "two": "Serviços",
+    "three": "Produtos Web",
+    "four": "Contato",
+    "five": "Navegação"
+  },
+  "nav_language": {
+    "en": "Inglês",
+    "pt": "Português",
+    "jp": "Japonês",
+    "sp": "Espanhol"
+  },
+  "header": {
+    "one": "Da imaginação à realidade, com um sopro",
+    "two": { "one": "WEB", "two": "SERVIÇOS" },
+    "three": "Criação, gestão e evolução do seu site",
+    "whatsapp": "",
+    "instagram": "",
+    "email": "",
+    "about": "Tudo o que o seu site precisa, do planejamento à manutenção contínua. Criamos e cuidamos do seu site para que ele permaneça atualizado, rápido, seguro e alinhado ao crescimento do seu negócio.",
+    "tema": {
+      "one": "PRESENÇA",
+      "two": "DIGITAL"
+    }
+  },
+  "services": {
+    "title": "MINHA ESPECIALIZAÇÃO",
+    "topic": "Serviço",
+    "topic_2": "SERVIÇOS",
+    "container": {
+      "one": {
+        "title": "Criação e Gestão de Sites",
+        "about": "Desenvolvemos sites modernos e responsivos, alinhados à identidade da sua marca, com foco em conversão e na experiência do usuário.",
+        "subs": {
+          "one": {
+            "title": "Design Personalizado",
+            "text": "Desenvolvemos seu site do zero, com identidade visual exclusiva e estrutura pensada para o seu negócio. Do layout ao funcionamento, tudo é criado sob medida para sua empresa."
+          },
+          "two": {
+            "title": "Template Profissional",
+            "text": "Layouts prontos e otimizados. Personalizamos com sua marca e oferecemos mensalidade acessível para manter seu site sempre online.",
+            "more":"mais"
+          }
+        }
+      },
+      "two": {
+        "title": "Upgrade de Imagens e Logotipos",
+        "about": "Aprimoramos imagens e logotipos para alcançar maior qualidade, consistência visual e impacto profissional no seu site."
+      }
+    }
+  },
+  "templates": {
+    "topic": "Templates",
+    "topic_2": "TEMPLATES",
+    "text": "Layouts prontos e otimizados, ideais para quem busca rapidez e menor custo. Personalizamos com sua marca e oferecemos mensalidade acessível para manter seu site sempre online.",
+    "models": "Modelo"
+  },
+  "product_web": {
+    "title": "PRODUTOS",
+    "subtitle": "Produtos Web",
+    "about": "Soluções sob medida para diferentes tipos de negócios, com foco em desempenho, escalabilidade e custo-benefício. Conheça alguns modelos disponíveis:",
+    "service_sub": "O que está incluso",
+    "services": {
+      "one": {
+        "title": "Manutenção",
+        "about": "Atualizações, correções e melhorias contínuas para manter seu site funcionando perfeitamente."
+      },
+      "two": {
+        "title": "Banco de Dados",
+        "about": "Banco de dados seguro e bem estruturado para armazenar e gerenciar as informações do seu negócio."
+      },
+      "three": {
+        "title": "Domínio",
+        "about": "Auxílio na escolha, configuração e gerenciamento do domínio do seu site."
+      },
+      "four": {
+        "title": "Hospedagem",
+        "about": "Gestão completa da hospedagem, com foco em desempenho, estabilidade e confiabilidade."
+      },
+      "five": {
+        "title": "Acessibilidade",
+        "about": "Boas práticas para garantir que seu site seja acessível em diferentes dispositivos e para públicos diversos."
+      },
+      "six": {
+        "title": "Velocidade",
+        "about": "Otimização do tempo de carregamento para melhorar a experiência do usuário e o SEO."
+      },
+      "seven": {
+        "title": "Segurança",
+        "about": "Medidas de proteção e boas práticas para manter seu site seguro e confiável."
+      }
+    },
+    "languages": {
+      "title": "Tecnologias",
+      "about": "As tecnologias mais modernas e avançadas utilizadas no desenvolvimento do seu site.",
+      "about_company": "Empresas que utilizam essas mesmas tecnologias:"
+    },
+    "productPage": {
+      "one": "Veja mais!",
+      "two": "Alguns modelos disponíveis"
+    }
+  },
+  "upgrade_img": {
+    "title": "Upgrade",
+    "subtitle": "Upgrade de Imagens",
+    "about": "Serviço especializado no aprimoramento de imagens de produtos e logotipos, com foco em qualidade visual, nitidez e impacto profissional. Confira alguns exemplos de antes e depois:",
+    "after": "Depois",
+    "before": "Antes",
+    "logo": {
+      "title": {
+        "one": "Deseja criar ou",
+        "two": "atualizar um logotipo?"
+      },
+      "about": "Crie um novo logotipo ou aprimore o seu atual em diferentes estilos e formatos."
+    },
+    "example": "Exemplo de Modelo",
+    "manyStyle": "Você pode ter o logotipo da sua empresa ou serviço em diversos estilos",
+    "season": {
+      "title": "Estações",
+      "inverno": "Inverno",
+      "outono": "Outono",
+      "primavera": "Primavera",
+      "verao": "Verão"
+    },
+    "cool": {
+      "one": "Veja como",
+      "two": "incrível",
+      "three": "isso",
+      "four": "pode",
+      "five": "ficar!"
+    },
+    "specialData": {
+      "title": "Datas Especiais",
+      "chrismass": "Natal",
+      "newYear": "Ano Novo",
+      "valent": "Dia dos Namorados",
+      "soccer": "Copa"
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "sub": "FALE COMIGO",
+    "subtitle": {
+      "one": "Vamos falar sobre",
+      "two": "seu",
+      "three": "próximo projeto"
+    },
+    "whatsapp": "Vamos criar o seu site",
+    "insta": "Veja mais!"
+  },
+  "foot": {
+    "title": {
+      "one": "Vamos",
+      "two": "nos conectar"
+    },
+    "subtitle": "Entre em contato e dê o próximo passo para fortalecer sua presença digital com soluções modernas e eficientes."
+  }
+}

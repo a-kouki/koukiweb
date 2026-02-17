@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "one": "Inicio",
+    "two": "Servicios",
+    "three": "Productos Web",
+    "four": "Contacto",
+    "five": "Navegación"
+  },
+  "nav_language": {
+    "en": "Inglés",
+    "pt": "Portugués",
+    "jp": "Japonés",
+    "sp": "Español"
+  },
+  "header": {
+    "one": "De la imaginación a la realidad, con un soplo",
+    "two": { "one": "WEB", "two": "SERVICIOS" },
+    "three": "Creación, gestión y evolución de tu sitio web",
+    "whatsapp": "",
+    "instagram": "",
+    "email": "",
+    "about": "Todo lo que tu sitio web necesita, desde la planificación hasta el mantenimiento continuo. Creamos y gestionamos tu sitio para que se mantenga actualizado, rápido, seguro y alineado con el crecimiento de tu negocio.",
+    "tema": {
+      "one": "PRESENCIA",
+      "two": "DIGITAL"
+    }
+  },
+  "services": {
+    "title": "MI ESPECIALIZACIÓN",
+    "topic": "Servicio",
+    "topic_2": "SERVICIOS",
+    "container": {
+      "one": {
+        "title": "Creación y Gestión de Sitios Web",
+        "about": "Desarrollamos sitios web modernos y responsivos, alineados con la identidad de tu marca, con enfoque en la conversión y la experiencia del usuario.",
+        "subs": {
+          "one": {
+            "title": "Diseño Personalizado",
+            "text": "Desarrollamos su sitio web desde cero, con identidad visual exclusiva y una estructura pensada para su negocio. Desde el diseño hasta el funcionamiento, todo se crea a medida para su empresa."
+          },
+          "two": {
+            "title": "Plantilla Profesional",
+            "text": "Diseños listos y optimizados. Los personalizamos con su marca y ofrecemos una mensualidad accesible para mantener su sitio siempre en línea.",
+            "more":"Ver más"
+          }
+        }
+      },
+      "two": {
+        "title": "Mejora de Imágenes y Logotipos",
+        "about": "Optimizamos imágenes y logotipos para lograr mayor calidad, consistencia visual e impacto profesional en tu sitio web."
+      }
+    }
+  },
+  "templates": {
+    "topic": "Plantillas",
+    "topic_2": "PLANTILLAS",
+    "text": "Diseños listos y optimizados, ideales para quienes buscan rapidez y menor costo. Los personalizamos con su marca y ofrecemos una mensualidad accesible para mantener su sitio siempre en línea.",
+    "models": "Modelo"
+  },
+  "product_web": {
+    "title": "PRODUCTOS",
+    "subtitle": "Productos Web",
+    "about": "Soluciones a medida para distintos tipos de negocios, con enfoque en rendimiento, escalabilidad y rentabilidad. Descubre algunos modelos disponibles:",
+    "service_sub": "Qué incluye",
+    "services": {
+      "one": {
+        "title": "Mantenimiento",
+        "about": "Actualizaciones, correcciones y mejoras continuas para mantener tu sitio web funcionando perfectamente."
+      },
+      "two": {
+        "title": "Base de Datos",
+        "about": "Bases de datos seguras y bien estructuradas para almacenar y gestionar la información de tu negocio."
+      },
+      "three": {
+        "title": "Dominio",
+        "about": "Asistencia en la elección, configuración y gestión del dominio de tu sitio web."
+      },
+      "four": {
+        "title": "Alojamiento",
+        "about": "Gestión completa del alojamiento, con enfoque en rendimiento, estabilidad y confiabilidad."
+      },
+      "five": {
+        "title": "Accesibilidad",
+        "about": "Buenas prácticas para garantizar que tu sitio web sea accesible en diferentes dispositivos y para públicos diversos."
+      },
+      "six": {
+        "title": "Velocidad",
+        "about": "Optimización del tiempo de carga para mejorar la experiencia del usuario y el SEO."
+      },
+      "seven": {
+        "title": "Seguridad",
+        "about": "Medidas de protección y buenas prácticas para mantener tu sitio web seguro y confiable."
+      }
+    },
+    "languages": {
+      "title": "Tecnologías",
+      "about": "Las tecnologías más modernas y avanzadas utilizadas en el desarrollo de tu sitio web.",
+      "about_company": "Empresas que utilizan estas mismas tecnologías:"
+    },
+    "productPage": {
+      "one": "Ver más",
+      "two": "Algunos modelos disponibles"
+    }
+  },
+  "upgrade_img": {
+    "title": "Upgrade",
+    "subtitle": "Mejora de Imágenes",
+    "about": "Servicio especializado en la mejora de imágenes de productos y logotipos, con enfoque en calidad visual, nitidez e impacto profesional. Consulta algunos ejemplos de antes y después:",
+    "after": "Después",
+    "before": "Antes",
+    "logo": {
+      "title": {
+        "one": "¿Deseas crear o",
+        "two": "actualizar un logotipo?"
+      },
+      "about": "Crea un nuevo logotipo o mejora el actual en diferentes estilos y formatos."
+    },
+    "example": "Ejemplo de Modelo",
+    "manyStyle": "Puedes tener el logotipo de tu empresa o servicio en diversos estilos",
+    "season": {
+      "title": "Estaciones",
+      "inverno": "Invierno",
+      "outono": "Otoño",
+      "primavera": "Primavera",
+      "verao": "Verano"
+    },
+    "cool": {
+      "one": "Mira cómo",
+      "two": "increíble",
+      "three": "esto",
+      "four": "puede",
+      "five": "quedar"
+    },
+    "specialData": {
+      "title": "Fechas Especiales",
+      "chrismass": "Navidad",
+      "newYear": "Año Nuevo",
+      "valent": "Día de San Valentín",
+      "soccer": "Copa del Mundo"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "sub": "CONTÁCTAME",
+    "subtitle": {
+      "one": "Hablemos sobre",
+      "two": "tu",
+      "three": "próximo proyecto"
+    },
+    "whatsapp": "Construyamos tu sitio web",
+    "insta": "Ver más"
+  },
+  "foot": {
+    "title": {
+      "one": "Vamos a",
+      "two": "conectar"
+    },
+    "subtitle": "Ponte en contacto y da el siguiente paso para fortalecer tu presencia digital con soluciones modernas y eficientes."
+  }
+}

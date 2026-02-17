@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "one": "Home",
+    "two": "Services",
+    "three": "Web Products",
+    "four": "Contact",
+    "five": "Navigation"
+  },
+  "nav_language": {
+    "en": "English",
+    "pt": "Portuguese",
+    "jp": "Japanese",
+    "sp": "Spanish"
+  },
+  "header": {
+    "one": "From imagination to reality, with a breath",
+    "two": { "one": "WEB", "two": "SERVICES" },
+    "three": "Creation, management, and evolution of your website",
+    "whatsapp": "",
+    "instagram": "",
+    "email": "",
+    "about": "Everything your website needs, from planning to continuous maintenance. We create and manage your site so it remains up to date, fast, secure, and aligned with your business growth.",
+    "tema": {
+      "one": "DIGITAL",
+      "two": "PRESENCE"
+    }
+  },
+  "services": {
+    "title": "MY EXPERTISE",
+    "topic": "Service",
+    "topic_2": "SERVICES",
+    "container": {
+      "one": {
+        "title": "Website Creation and Management",
+        "about": "We develop modern and responsive websites aligned with your brand identity, focusing on conversion and user experience.",
+        "subs": {
+          "one": {
+            "title": "Custom Design",
+            "text": "We develop your website from scratch, with exclusive visual identity and a structure tailored to your business. From layout to functionality, everything is built specifically for your company."
+          },
+          "two": {
+            "title": "Professional Template",
+            "text": "Ready-made and optimized layouts. We customize them with your brand and offer an affordable monthly plan to keep your website always online.",
+            "more":"more"
+          }
+        }      
+      },
+      "two": {
+        "title": "Image and Logo Upgrade",
+        "about": "We enhance images and logos to achieve higher quality, visual consistency, and professional impact on your website."
+      }
+    }
+  },
+  "templates": {
+    "topic": "Templates",
+    "topic_2": "TEMPLATES",
+    "text": "Ready-made and optimized layouts, ideal for those seeking speed and lower cost. We customize them with your brand and offer an affordable monthly plan to keep your website always online.",
+    "models": "Model"
+  },
+  "product_web": {
+    "title": "PRODUCTS",
+    "subtitle": "Web Products",
+    "about": "Tailored solutions for different types of businesses, focused on performance, scalability, and cost-effectiveness. Discover some available models:",
+    "service_sub": "What’s included",
+    "services": {
+      "one": {
+        "title": "Maintenance",
+        "about": "Continuous updates, fixes, and improvements to keep your website running smoothly."
+      },
+      "two": {
+        "title": "Database",
+        "about": "Secure and well-structured databases to store and manage your business information."
+      },
+      "three": {
+        "title": "Domain",
+        "about": "Assistance with choosing, configuring, and managing your website domain."
+      },
+      "four": {
+        "title": "Hosting",
+        "about": "Complete hosting management focused on performance, stability, and reliability."
+      },
+      "five": {
+        "title": "Accessibility",
+        "about": "Best practices to ensure your website is accessible across different devices and for diverse audiences."
+      },
+      "six": {
+        "title": "Speed",
+        "about": "Load time optimization to improve user experience and SEO."
+      },
+      "seven": {
+        "title": "Security",
+        "about": "Protective measures and best practices to keep your website secure and trustworthy."
+      }
+    },
+    "languages": {
+      "title": "Technologies",
+      "about": "The most modern and advanced technologies used in the development of your website.",
+      "about_company": "Companies that use these same technologies:"
+    },
+    "productPage": {
+      "one": "See more!",
+      "two": "Some available models"
+    }
+  },
+  "upgrade_img": {
+    "title": "Upgrade",
+    "subtitle": "Image Upgrade",
+    "about": "A specialized service focused on enhancing product and logo images, with an emphasis on visual quality, sharpness, and professional impact. Check out some before and after examples:",
+    "after": "After",
+    "before": "Before",
+    "logo": {
+      "title": {
+        "one": "Would you like to create or",
+        "two": "update a logo?"
+      },
+      "about": "Create a new logo or enhance your current one in different styles and formats."
+    },
+    "example": "Example Model",
+    "manyStyle": "You can have your company or service logo in multiple styles",
+    "season": {
+      "title": "Seasons",
+      "inverno": "Winter",
+      "outono": "Autumn",
+      "primavera": "Spring",
+      "verao": "Summer"
+    },
+    "cool": {
+      "one": "See how",
+      "two": "amazing",
+      "three": "this",
+      "four": "can",
+      "five": "look!"
+    },
+    "specialData": {
+      "title": "Special Dates",
+      "chrismass": "Christmas",
+      "newYear": "New Year",
+      "valent": "Valentine’s Day",
+      "soccer": "World Cup"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "sub": "CONTACT ME",
+    "subtitle": {
+      "one": "Let’s talk about",
+      "two": "your",
+      "three": "next project"
+    },
+    "whatsapp": "Let’s build your website",
+    "insta": "See more!"
+  },
+  "foot": {
+    "title": {
+      "one": "Let’s",
+      "two": "Connect"
+    },
+    "subtitle": "Get in touch and take the next step to strengthen your digital presence with modern and efficient solutions."
+  }
+}

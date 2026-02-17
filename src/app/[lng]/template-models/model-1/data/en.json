@@ -1,0 +1,132 @@
+{
+  "brand": {
+    "name": "Creamey",
+    "logo": "/templates-models/1/model-1/logo.png"
+  },
+
+  "nav": {
+    "home": "Home",
+    "contact": "Contact",
+    "flavors": "Flavors",
+    "locations": "Locations"
+  },
+
+  "hero": {
+    "images": {
+      "background": "/templates-models/1/model-1/hero.png",
+      "product": "/templates-models/1/model-1/hero-product.png",
+      "menuIcon": "/templates-models/1/model-1/Menu.svg",
+      "phoneIcon": "/templates-models/1/model-1/Smartphone.svg"
+    },
+    "kicker": "Your favorite moment of the day",
+    "title": "Flavor that wins you over",
+    "headline": "Sweet at the right measure",
+    "description": "Handcrafted flavors, selected ingredients, and lots of love in every recipe.",
+    "houseFlavor": {
+      "title": "House Flavor",
+      "subtitle": "Intense creaminess with a rich flavor and a smooth finish."
+    }
+  },
+
+  "section": {
+    "specials": {
+      "title": "Specials",
+      "subtitle": "More flavor to make your moment even better.",
+      "badge": "To sweeten your day",
+      "images": [
+        "/templates-models/1/model-1/section_1.png",
+        "/templates-models/1/model-1/section_2.png",
+        "/templates-models/1/model-1/section_1.png",
+        "/templates-models/1/model-1/section_1.png"
+      ]
+    },
+
+    "store": {
+      "brandTitle": "Creamery",
+      "brandSubtitle": "A space created to turn simple moments into sweet experiences.",
+      "bannerTitle": "Our Store",
+      "image": "/templates-models/1/model-1/our_store.png"
+    },
+
+    "gallery": {
+      "images": {
+        "left": "/templates-models/1/model-1/1.png",
+        "rightTop": "/templates-models/1/model-1/2.png",
+        "rightBottom": "/templates-models/1/model-1/3.png"
+      },
+      "titles": {
+        "left": "Exclusive flavors",
+        "rightTop": "Special",
+        "rightBottom": "Handcrafted ice cream"
+      }
+    },
+
+    "flavors": {
+      "title": "Flavors",
+      "items": [
+        {
+          "name": "Vanilla",
+          "image": "/templates-models/1/model-1/section_1.png"
+        },
+        {
+          "name": "Vanilla",
+          "image": "/templates-models/1/model-1/section_1.png"
+        },
+        {
+          "name": "Vanilla",
+          "image": "/templates-models/1/model-1/section_1.png"
+        },
+        {
+          "name": "Vanilla",
+          "image": "/templates-models/1/model-1/section_1.png"
+        },
+        {
+          "name": "Vanilla",
+          "image": "/templates-models/1/model-1/section_1.png"
+        }
+      ]
+    }
+  },
+
+  "contact": {
+    "title": "Contact",
+    "icons": {
+      "messenger": "/templates-models/1/model-1/Messenger.svg",
+      "instagram": "/templates-models/1/model-1/Instagram.svg"
+    },
+    "items": {
+      "deliveryPickup": "We deliver and offer pickup!",
+      "visitInstagram": "Visit our Instagram",
+      "postHighlight": "Check out this post about our homemade ice cream!"
+    },
+    "phone": {
+      "line1": "(11)99999999",
+      "line2": "(11)99999999"
+    }
+  },
+
+  "location": {
+    "title": "Location",
+    "map": {
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28731101.47449969!2d-117.32462979999998!3d28.473085100000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77f2046a78617%3A0xb28d2e2d7510684e!2sCold%20Stone%20Creamery!5e0!3m2!1spt-BR!2sbr!4v1769452300665!5m2!1spt-BR!2sbr"
+    }
+  },
+
+  "footer": {
+    "brand": {
+      "name": "Creamary",
+      "slogan": "refrescando seus melhores momentos."
+    },
+    "contact": {
+      "email": "example@email.com"
+    },
+    "social": {
+      "title": "Social Media",
+      "icons": [
+        "/templates-models/1/model-1/Instagram.svg",
+        "/templates-models/1/model-1/Messenger.svg"
+      ]
+    },
+    "copyright": "© {{year}} Cremary"
+  }
+}

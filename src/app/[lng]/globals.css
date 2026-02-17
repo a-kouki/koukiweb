@@ -1,0 +1,51 @@
+
+@import "flowbite/src/themes/default";
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-grandHotel: var(--font-grand-hotel);
+  --font-abeezee: var(--font-abeezee);
+}
+
+@theme{
+  --font-inclusive: var(--font-inclusive);
+  --font-anton: var(--font-anton);
+  --font-poetsen: var(--font-poetsen);
+  --font-inter: var(--font-inter);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* esconde scrollbar mas mantém o scroll */
+.no-scrollbar {
+  -ms-overflow-style: none;     /* IE e Edge */
+  scrollbar-width: none;        /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
+
+
