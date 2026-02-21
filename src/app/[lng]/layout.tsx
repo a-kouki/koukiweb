@@ -114,6 +114,12 @@ export default async function RootLayout({
   return (
     <html lang={lng} suppressHydrationWarning className="dark" >
       <head>
+        <link
+          rel="icon"
+          href="/favicon.png"
+          type="image/png"
+          sizes="any"
+        />
         <script>{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
