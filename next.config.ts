@@ -23,10 +23,10 @@ const nextConfig: NextConfig = {
       destination: 'https://model-2-orpin.vercel.app/:path*',
     },
     {
-      source: '/_next/:path*',
+      source: '/template_2-next/:path*',
       destination: 'https://model-2-orpin.vercel.app/_next/:path*',
     },
-  ]
+  ];
 }
 };
 
