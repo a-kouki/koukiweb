@@ -32,6 +32,10 @@ function getLocaleFromPath(pathname: string): Locale | null {
 export default function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  if (pathname.startsWith("/template_2")) {
+    return NextResponse.next();
+  }
+
   if (pathname.startsWith("/_next") || pathname.startsWith("/api") || pathname.includes(".")) {
     return NextResponse.next();
   }
