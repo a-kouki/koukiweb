@@ -13,22 +13,21 @@ const nextConfig: NextConfig = {
     removeConsole:true,
   },
   async rewrites() {
-    return [
-      {
-        source: '/template_2',
-        destination: 'https://model-2-orpin.vercel.app/',
-      },
-      {
-        source: '/template_2/:path*',
-        destination: 'https://model-2-orpin.vercel.app/:path*',
-      },
-      {
-        source: '/_next/:path*',
-        destination: 'https://model-2-orpin.vercel.app/_next/:path*',
-      },
-    ]
-  }
-
+  return [
+    {
+      source: '/template_2',
+      destination: 'https://model-2-orpin.vercel.app/',
+    },
+    {
+      source: '/template_2/:path*',
+      destination: 'https://model-2-orpin.vercel.app/:path*',
+    },
+    {
+      source: '/_next/:path*',
+      destination: 'https://model-2-orpin.vercel.app/_next/:path*',
+    },
+  ]
+}
 };
 
 export default withBundleAnalyzer(nextConfig);
