@@ -135,9 +135,7 @@ export default function Templates(){
                                     { (index == 0 && i == 1) && 
                                     <a href="/template-models/model-1" target="_blank" rel="noopener noreferrer" className="bg-[#D20A2E] rounded-4xl text-white flex justify-center items-center py-2 w-[80%]">link</a>
                                     }
-                                    { (index == 1 && i == 1) && 
-                                    <a href="/template_2" target="_blank" rel="noopener noreferrer" className="bg-[#D20A2E] rounded-4xl text-white flex justify-center items-center py-2 w-[80%]">link</a>
-                                    }
+                                    
                                 </div>
                             ))}
                             </div>
