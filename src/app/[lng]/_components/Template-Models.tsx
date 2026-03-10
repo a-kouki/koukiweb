@@ -190,6 +190,7 @@ export default function Templates() {
                   {template.imgs.map((img, i) => (
                     <div key={i} className="flex flex-col gap-2 items-center w-full">
 
+<<<<<<< HEAD
                       <button
                         className="
                           group relative w-full
@@ -254,11 +255,27 @@ export default function Templates() {
                       )}
                     </div>
                   ))}
+=======
+                                    { (index == 0 && i == 1) && 
+                                    <a href="/template-models/model-1" target="_blank" rel="noopener noreferrer" className="bg-[#D20A2E] rounded-4xl text-white flex justify-center items-center py-2 w-[80%]">link</a>
+                                    }
+                                    { (index == 1 && i == 1) && 
+                                    <a href="/template_2" target="_blank" rel="noopener noreferrer" className="bg-[#D20A2E] rounded-4xl text-white flex justify-center items-center py-2 w-[80%]">link</a>
+                                    }
+                                    
+                                </div>
+                            ))}
+                            </div>
+                            </div>
+                        ))
+                    }
+>>>>>>> 96d2e449326dc3e9687a7f8a115c769ff22c3c0d
                 </div>
               </div>
             ))}
           </div>
 
+<<<<<<< HEAD
           <div className="mt-20">
 
             <div className="flex justify-center mb-10">
@@ -343,3 +360,7 @@ export default function Templates() {
     </>
   )
 }
+=======
+    )
+}
+>>>>>>> 96d2e449326dc3e9687a7f8a115c769ff22c3c0d
