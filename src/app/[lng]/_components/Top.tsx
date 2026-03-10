@@ -150,55 +150,7 @@ export default function Top() {
         </div>
       </div>
 
-      <style jsx global>{`
-        @keyframes marquee {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        .animate-marquee { animation: marquee 30s linear infinite; }
-
-        @keyframes fade-in-up {
-          from { opacity: 0; transform: translateY(28px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in-up { animation: fade-in-up 0.8s ease both; }
-
-        @keyframes fade-in-right {
-          from { opacity: 0; transform: translateX(20px); }
-          to   { opacity: 1; transform: translateX(0); }
-        }
-        .animate-fade-in-right { animation: fade-in-right 0.9s 0.3s ease both; }
-
-        /* Leão respira suavemente — sobe e desce */
-        @keyframes lion-breathe {
-          0%, 100% { transform: translateY(0px)   scale(1);     }
-          40%       { transform: translateY(-12px) scale(1.015); }
-          60%       { transform: translateY(-5px)  scale(1.008); }
-        }
-        .animate-lion-breathe {
-          transform-origin: center bottom;
-          animation: lion-breathe 4s ease-in-out infinite;
-        }
-
-        /* Vento pulsa e deriva para a esquerda no pico do sopro */
-        @keyframes wind-blow {
-          0%   { opacity: 0.15; transform: scaleX(1) translateX(0px);   }
-          40%  { opacity: 0.25; transform: scaleX(1) translateX(-8px);  }
-          60%  { opacity: 0.38; transform: scaleX(1) translateX(-16px); }
-          80%  { opacity: 0.22; transform: scaleX(1) translateX(-22px); }
-          100% { opacity: 0.15; transform: scaleX(1) translateX(0px);   }
-        }
-        .animate-wind-blow { animation: wind-blow 4s ease-in-out infinite; }
-
-        .dark .animate-wind-blow { animation: wind-blow-dark 4s ease-in-out infinite; }
-        @keyframes wind-blow-dark {
-          0%   { opacity: 0.20; transform: scaleX(1) translateX(0px);   }
-          40%  { opacity: 0.32; transform: scaleX(1) translateX(-8px);  }
-          60%  { opacity: 0.48; transform: scaleX(1) translateX(-16px); }
-          80%  { opacity: 0.28; transform: scaleX(1) translateX(-22px); }
-          100% { opacity: 0.20; transform: scaleX(1) translateX(0px);   }
-        }
-      `}</style>
+     
     </>
   );
 }
