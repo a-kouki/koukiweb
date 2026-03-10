@@ -16,6 +16,7 @@
   --font-mono: var(--font-geist-mono);
   --font-grandHotel: var(--font-grand-hotel);
   --font-abeezee: var(--font-abeezee);
+  
 }
 
 @theme{
@@ -23,6 +24,8 @@
   --font-anton: var(--font-anton);
   --font-poetsen: var(--font-poetsen);
   --font-inter: var(--font-inter);
+  --font-jetbrainsMono : var(--font-jetbrainsMono);
+  --font-spaceGrotesk: var(--font-spaceGrotesk)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,4 +51,7 @@ body {
   display: none;                /* Chrome, Safari */
 }
 
-
+/*
+* {
+  outline: 1px solid red;
+}*/

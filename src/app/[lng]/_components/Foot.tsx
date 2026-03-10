@@ -10,13 +10,13 @@ export default function FOOT(){
     const year = new Date().getFullYear();
     
     const icons = [
-        {ic:FaInstagram , href:"https://www.instagram.com/kouki.tech/", label: "Contact via Instagram"},
+        {ic:FaInstagram , href:"https://www.instagram.com/kouki.web/", label: "Contact via Instagram"},
         {ic:FaWhatsapp, href:"https://wa.me/5566997187450", label: "Contact via Whatsapp"},
         {ic:SiGmail, href:"", label: "Contact via Email"}
     ]
     
     return(
-        <section>
+        <section className="relative z-0">
         <div className="bg-black flex justify-center">
             <div className="flex flex-col items-start py-10 px-10 sm:px-30 gap-y-2">  
                 <h3 className="text-white text-[30px] md:text-[50px]">

@@ -55,7 +55,34 @@
     "topic": "Templates",
     "topic_2": "TEMPLATES",
     "text": "Layouts prontos e otimizados, ideais para quem busca rapidez e menor custo. Personalizamos com sua marca e oferecemos mensalidade acessível para manter seu site sempre online.",
-    "models": "Modelo"
+    "models": "Modelo",
+    "modal": { 
+      "close": "fechar", 
+      "alt": "Visualização do template", 
+      "expand": "Ampliar" 
+    }, 
+    "img_labels": 
+    { "overview": "Visão Geral", 
+    "variation_1": "variação 1", 
+    "variation_2": "variação 2", 
+    "variation_3": "variação 3" 
+  },
+    "pagespeed": {
+      "badge": "Diagnóstico de Desempenho",
+      "link_label": "PageSpeed Insights — google.com/speed/pagespeed/insights ↗",
+      "metrics": {
+        "performance": "Desempenho",
+        "accessibility": "Acessibilidade",
+        "best_practices": "Práticas Recomendadas",
+        "seo": "SEO"
+      },
+      "approved_badge": "✓ aprovado",
+      "legend": {
+        "poor": "0–49 · Ruim",
+        "needs_improvement": "50–89 · Melhorar",
+        "good": "90–100 · Bom"
+      }
+    }
   },
   "product_web": {
     "title": "PRODUTOS",

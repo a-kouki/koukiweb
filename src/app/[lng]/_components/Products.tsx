@@ -82,8 +82,10 @@ export default function Products(){
 
                 </div>
             </div>
-
-            <a href="/products">
+            
+            <div className="flex justify-center px-10">
+            <div>
+            <a href="/products" className="relative flex justify-center w-full max-w-300 z-10">
             <Image
             src="/product_web_white.webp"
             className="w-full hidden dark:flex"
@@ -100,6 +102,8 @@ export default function Products(){
             alt="Web product models available for sale"          
             />
             </a>
+            </div>
+            </div>
                             
         <div className="flex justify-center">
             <p className="pt-15 pb-5 px-20 pr-40 sm:pr-100 dark:text-white text-black  text-[20px] md:text-[35px] text-nowrap">

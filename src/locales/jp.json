@@ -55,7 +55,35 @@
     "topic": "テンプレート",
     "topic_2": "TEMPLATES",
     "text": "すぐに使える最適化されたテンプレートをご用意しています。ブランドに合わせてカスタマイズし、サイトを常にオンラインに保つための手頃な月額プランをご提供します。",
-    "models": "モデル"
+    "models": "モデル",
+    "modal": {
+        "close": "閉じる",
+        "alt": "テンプレートのプレビュー",
+        "expand": "拡大"
+      },
+    "img_labels": {
+        "overview": "概要",
+        "variation_1": "バリエーション 1",
+        "variation_2": "バリエーション 2",
+        "variation_3": "バリエーション 3"
+    },
+    "pagespeed": {
+      "badge": "パフォーマンス診断",
+      "link_label": "PageSpeed Insights — google.com/speed/pagespeed/insights ↗",
+      "metrics": {
+        "performance": "パフォーマンス",
+        "accessibility": "アクセシビリティ",
+        "best_practices": "ベストプラクティス",
+        "seo": "SEO"
+      },
+      "approved_badge": "✓ 承認済み",
+      "legend": {
+        "poor": "0–49 · 不良",
+        "needs_improvement": "50–89 · 要改善",
+        "good": "90–100 · 良好"
+      }
+    }
+  
   },
   "product_web": {
     "title": "プロダクト",

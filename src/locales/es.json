@@ -55,7 +55,37 @@
     "topic": "Plantillas",
     "topic_2": "PLANTILLAS",
     "text": "Diseños listos y optimizados, ideales para quienes buscan rapidez y menor costo. Los personalizamos con su marca y ofrecemos una mensualidad accesible para mantener su sitio siempre en línea.",
-    "models": "Modelo"
+    "models": "Modelo",
+    "templates": {
+    "modal": {
+      "close": "cerrar",
+      "alt": "Vista previa de la plantilla",
+      "expand": "Ampliar"
+    },
+    "img_labels": {
+      "overview": "Vista general",
+      "variation_1": "Variación 1",
+      "variation_2": "Variación 2",
+      "variation_3": "Variación 3"
+    }
+    },
+    "pagespeed": {
+      "badge": "Diagnóstico de Rendimiento",
+      "link_label": "PageSpeed Insights — google.com/speed/pagespeed/insights ↗",
+      "metrics": {
+        "performance": "Rendimiento",
+        "accessibility": "Accesibilidad",
+        "best_practices": "Buenas Prácticas",
+        "seo": "SEO"
+      },
+      "approved_badge": "✓ aprobado",
+      "legend": {
+        "poor": "0–49 · Malo",
+        "needs_improvement": "50–89 · Mejorar",
+        "good": "90–100 · Bueno"
+      }
+    }
+
   },
   "product_web": {
     "title": "PRODUCTOS",

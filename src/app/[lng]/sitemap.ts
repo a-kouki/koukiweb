@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseURL = 'http://localhost:3000/'
+  const baseURL = 'http://koukiwebservice.com/'
   
   return [
     {

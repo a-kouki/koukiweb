@@ -55,7 +55,35 @@
     "topic": "Templates",
     "topic_2": "TEMPLATES",
     "text": "Ready-made and optimized layouts, ideal for those seeking speed and lower cost. We customize them with your brand and offer an affordable monthly plan to keep your website always online.",
-    "models": "Model"
+    "models": "Model",
+    "modal": {
+      "close": "close",
+      "alt": "Template preview",
+      "expand": "Expand"
+    },
+    "img_labels": {
+      "overview": "Overview",
+      "variation_1": "Variation 1",
+      "variation_2": "Variation 2",
+      "variation_3": "Variation 3"
+    },
+    "pagespeed": {
+      "badge": "Performance Diagnostics",
+      "link_label": "PageSpeed Insights — google.com/speed/pagespeed/insights ↗",
+      "metrics": {
+        "performance": "Performance",
+        "accessibility": "Accessibility",
+        "best_practices": "Best Practices",
+        "seo": "SEO"
+      },
+      "approved_badge": "✓ approved",
+      "legend": {
+        "poor": "0–49 · Poor",
+        "needs_improvement": "50–89 · Needs Improvement",
+        "good": "90–100 · Good"
+      }
+    }
+
   },
   "product_web": {
     "title": "PRODUCTS",

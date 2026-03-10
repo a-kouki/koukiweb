@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Anton, Poetsen_One,Inclusive_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Anton, Poetsen_One,Inclusive_Sans, JetBrains_Mono,
+  Space_Grotesk
+ } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/i18n/I18nProvider";
 
@@ -40,6 +42,20 @@ const poetsen = Poetsen_One({
   variable: "--font-poetsen",
   display: "swap",
 });
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700"],
+    variable: "--font-jetBrainsMono",
+    display: "swap",
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700"],
+    variable: "--font-spaceGrotesk",
+    display: "swap",
+})
 
 const SITE_URL = "https://koukiwebservice.com"; 
 export async function generateMetadata(
@@ -114,6 +130,12 @@ export default async function RootLayout({
   return (
     <html lang={lng} suppressHydrationWarning className="dark" >
       <head>
+        <link
+          rel="icon"
+          href="/favicon.png"
+          type="image/png"
+          sizes="any"
+        />
         <script>{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -133,7 +155,7 @@ export default async function RootLayout({
       </head>
       
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${inclusive.variable} ${anton.variable} ${poetsen.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${inclusive.variable} ${anton.variable} ${poetsen.variable} ${jetBrainsMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKQ2KPM4"
         height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
