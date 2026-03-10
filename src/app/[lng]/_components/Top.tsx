@@ -37,12 +37,12 @@ export default function Top() {
         >
 
           {/* Glow azul centralizado atrás do leão */}
-          <div className="
+          <div className={`
             absolute flex justify-center
             w-[600px] h-[600px] rounded-full
             bg-[#2A0DCB] opacity-[0.08] dark:opacity-[0.15]
             blur-[140px]
-          " />
+          `}/>
 
             <div className="fixed inset-0 z-0 flex w-full justify-center items-center">
                 <div
