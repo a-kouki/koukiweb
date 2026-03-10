@@ -226,8 +226,7 @@ export default function ModelAvail() {
                       width={400}
                       height={600}
                       className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
-                      loading={modelIndex === 0 && imgIndex === 0 ? "eager" : "lazy"}
-                      priority={modelIndex === 0 && imgIndex === 0}
+                      loading="lazy"
                     />
 
                     <span className="
