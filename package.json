@@ -9,6 +9,7 @@
     "analyze": "ANALYZE=true next build --webpack"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@tailwindcss/vite": "^4.1.18",
     "flowbite": "^4.0.1",
     "i18next": "^25.7.3",

@@ -130,6 +130,40 @@
     "productPage": {
       "one": "Ver más",
       "two": "Algunos modelos disponibles"
+    },
+    "showcase": {
+      "badge": "SITIOS WEB PROFESIONALES",
+      "title": "Más que un sitio web. Una plataforma para tu negocio.",
+      "about": "Sitios web modernos desarrollados para mostrar tus productos, fortalecer tu marca y facilitar la gestión de contenidos mediante herramientas administrativas intuitivas.",
+      "catalog": {
+        "title": "Catálogo de Productos",
+        "about": "Productos organizados de forma clara y profesional para facilitar la navegación y ayudar a los clientes a encontrar rápidamente lo que buscan."
+      },
+      "details": {
+        "title": "Páginas de Detalle",
+        "about": "Presenta información, imágenes y características importantes de tus productos mediante una experiencia completa y atractiva."
+      },
+      "mobile": {
+        "title": "Experiencia Móvil",
+        "about": "Navegación rápida e intuitiva para usuarios que acceden a tu sitio desde teléfonos y tabletas."
+      },
+      "responsive": {
+        "title": "Diseño Responsivo",
+        "about": "Diseños adaptados a diferentes tamaños de pantalla para garantizar una experiencia consistente en cualquier dispositivo."
+      }
+    },
+    "management": {
+      "badge": "GESTIÓN DE CONTENIDOS",
+      "title": "Control total de tu sitio web en un solo lugar.",
+      "about": "Herramientas administrativas desarrolladas para simplificar la actualización de productos, información y contenidos tanto en computadoras como en dispositivos móviles.",
+      "dashboard": {
+        "title": "Panel Administrativo Inteligente",
+        "about": "Administra productos, información y contenido de tu sitio mediante una interfaz intuitiva diseñada para facilitar la gestión de tu negocio."
+      },
+      "mobile": {
+        "title": "Gestión en Cualquier Dispositivo",
+        "about": "Accede y actualiza tu catálogo desde el móvil o el ordenador, manteniendo tu sitio siempre actualizado."
+      }
     }
   },
   "upgrade_img": {

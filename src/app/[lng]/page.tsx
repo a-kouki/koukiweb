@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Nav from "./_components/Nav";
 import Top from "./_components/Top";

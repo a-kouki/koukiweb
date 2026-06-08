@@ -1,11 +1,8 @@
 import type { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
-<<<<<<< HEAD
   const baseURL = 'http://koukiwebservice.com/'
-=======
-  const baseURL = 'https://koukiwebservice.com'
->>>>>>> 96d2e449326dc3e9687a7f8a115c769ff22c3c0d
+
   
   return [
     {

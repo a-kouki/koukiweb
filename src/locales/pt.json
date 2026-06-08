@@ -127,6 +127,40 @@
     "productPage": {
       "one": "Veja mais!",
       "two": "Alguns modelos disponíveis"
+    },
+    "showcase": {
+      "badge": "SITES PROFISSIONAIS",
+      "title": "Mais do que um site. Uma plataforma para o seu negócio.",
+      "about": "Sites modernos desenvolvidos para apresentar seus produtos, fortalecer sua marca e facilitar a gestão do conteúdo através de ferramentas administrativas intuitivas.",
+      "catalog": {
+        "title": "Catálogo de Produtos",
+        "about": "Produtos organizados de forma clara e profissional para facilitar a navegação e ajudar seus clientes a encontrarem o que procuram."
+      },
+      "details": {
+        "title": "Páginas de Detalhes",
+        "about": "Apresente informações, imagens e características importantes dos seus produtos em uma experiência completa e atrativa."
+      },
+      "mobile": {
+        "title": "Experiência Mobile",
+        "about": "Navegação rápida e intuitiva para usuários que acessam seu site através de smartphones e tablets."
+      },
+      "responsive": {
+        "title": "Design Responsivo",
+        "about": "Layouts adaptados para diferentes tamanhos de tela, garantindo uma experiência consistente em qualquer dispositivo."
+      }
+    },
+    "management": {
+      "badge": "GESTÃO DE CONTEÚDO",
+      "title": "Controle total do seu site em um só lugar.",
+      "about": "Ferramentas administrativas desenvolvidas para simplificar a atualização de produtos, informações e conteúdos, tanto no computador quanto no celular.",
+      "dashboard": {
+        "title": "Painel Administrativo Inteligente",
+        "about": "Gerencie produtos, informações e conteúdos do seu site através de uma interface intuitiva, desenvolvida para facilitar a administração do seu negócio."
+      },
+      "mobile": {
+        "title": "Gestão em Qualquer Dispositivo",
+        "about": "Acesse e atualize seu catálogo pelo celular ou computador, mantendo seu site sempre atualizado com praticidade e agilidade."
+      }
     }
   },
   "upgrade_img": {

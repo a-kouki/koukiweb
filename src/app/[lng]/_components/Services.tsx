@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { TbDeviceIpadCode, TbPencilStar, TbLayoutGridAdd } from "react-icons/tb";
 
 export default function Services() {
-  const [t] = useTranslation();
+  const {t} = useTranslation();
 
   const contentService = [
     {
@@ -16,7 +16,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="bg-neutral-primary dark:bg-[#03152C]">
+    <section id="services" className="bg-white dark:bg-[#03152C]">
       {/* ── Cabeçalho ── */}
       <div className="relative flex justify-center pt-25 sm:pt-40 pb-20">
         <div className="relative flex flex-col items-center">
@@ -114,7 +114,8 @@ export default function Services() {
         {/* Sub-card 2 */}
         <div className="relative group w-full max-w-2xl">
           <div className="absolute left-0 top-6 w-1 h-16 bg-blue-600 rounded-r-full z-10" />
-          <div className="
+          <div
+            className={`
             relative z-20 ml-4
             flex flex-row items-center
             bg-[#0C1117]
@@ -127,7 +128,8 @@ export default function Services() {
             transition-all duration-300
             hover:border-cyan-500/50
             hover:shadow-[0_0_30px_rgba(0,246,255,0.08)]
-          ">
+          `}
+          >
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-cyan-400/5 rounded-full blur-3xl pointer-events-none" />
 
             {/* Ícone */}

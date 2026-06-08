@@ -8,6 +8,398 @@ import { RxAccessibility } from "react-icons/rx";
 import { TbWorldBolt } from "react-icons/tb";
 import { IoShieldOutline } from "react-icons/io5";
 
+interface Products {
+    img: string,
+    alt: string
+}
+
+function NotebookMockup({ img, alt }: Products) {
+  return (
+    <div className="flex justify-center py-2 px-5 md:px-0">
+      <div className="w-full max-w-[680px]">
+        <div className="bg-gray-50 border-2 border-[#2d3f55] rounded-[14px] p-[14px] pb-0 ">
+
+          {/* Top buttons */}
+          <div className="flex items-center gap-1.5 mb-2.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+          </div>
+
+          {/* Screen */}
+          <div className="bg-[#0a1628] rounded-t-[6px] h-[320px] overflow-y-auto overflow-x-hidden relative">
+            <Image
+              src={img}
+              alt={alt}
+              width={1400}
+              height={3000}
+              className="
+                w-full
+                h-auto
+                object-cover
+                object-top
+              "
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  )
+}
+
+export function StickyShowcase() {
+
+    const [t] = useTranslation()
+
+    const normalImages = [
+        {
+            img: '/products/5/2.png',
+            title: t('product_web.showcase.catalog.title'),
+            about: t('product_web.showcase.catalog.about'),
+        },
+        {
+            img: '/products/5/3.png',
+            title: t('product_web.showcase.details.title'),
+            about: t('product_web.showcase.details.about'),
+        }
+    ]
+
+    const verticalImages = [
+        {
+            img: '/products/5/4.png',
+            title: t('product_web.showcase.mobile.title'),
+            about: t('product_web.showcase.mobile.about'),
+        },
+        {
+            img: '/products/5/5.png',
+            title: t('product_web.showcase.responsive.title'),
+            about: t('product_web.showcase.responsive.about'),
+        }
+    ]
+
+    return (
+        <section className="bg-[#03152C] py-20">
+
+            <div className="max-w-7xl mx-auto px-5 md:px-10">
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                    <div
+                        className="
+                            sticky
+                            top-15 lg:top-20
+                            z-20
+                            h-fit
+                            bg-[#03152C]/90
+                            backdrop-blur-md
+                            py-6
+                            self-start
+                        "
+                    >
+
+                        <p className="text-[#00F6FF] text-sm tracking-[0.3rem] mb-4">
+                            {t('product_web.showcase.badge')}
+                        </p>
+
+                        <h2
+                            className="
+                                text-white
+                                text-4xl md:text-6xl
+                                font-bold
+                                leading-tight
+                                mb-6
+                            "
+                        >
+                            {t('product_web.showcase.title')}
+                        </h2>
+
+                        <p
+                            className="
+                                text-[#9CA3AF]
+                                text-sm md:text-lg
+                                leading-relaxed
+                                max-w-[500px]
+                            "
+                        >
+                            {t('product_web.showcase.about')}
+                        </p>
+
+                    </div>
+
+                    <div className="flex flex-col gap-8">
+
+                        {normalImages.map((item, index) => (
+                            <div
+                                key={index}
+                                className="
+                                    overflow-hidden
+                                    shadow-[0_20px_60px_rgba(0,0,0,0.35)]
+                                "
+                            >
+                                <Image
+                                    src={item.img}
+                                    alt={item.title}
+                                    width={1600}
+                                    height={1200}
+                                    className="
+                                        w-full
+                                        h-auto
+                                        object-cover
+                                    "
+                                />
+                            </div>
+                        ))}
+
+                        <div className="grid grid-cols-2 gap-5 h-100 md:h-150">
+
+                            {verticalImages.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="
+                                        overflow-hidden
+                                    "
+                                >
+                                    <Image
+                                        src={item.img}
+                                        alt={item.title}
+                                        width={800}
+                                        height={1600}
+                                        className="
+                                            w-full
+                                            h-auto
+                                            object-cover
+                                        "
+                                    />
+                                </div>
+                            ))}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    )
+}
+
+export function StickyShowcase_Two() {
+
+    const [t] = useTranslation()
+
+    const firstSection = {
+        img: '/products/5/6.png',
+        title: t('product_web.management.dashboard.title'),
+        about: t('product_web.management.dashboard.about'),
+    }
+
+    const secondSection = {
+        title: t('product_web.management.mobile.title'),
+        about: t('product_web.management.mobile.about'),
+        images: [
+            '/products/5/7.png',
+            '/products/5/8.png',
+            '/products/5/9.png'
+        ],
+    }
+
+    return (
+        <section className="bg-[#03152C] py-20">
+
+            <div className="max-w-7xl mx-auto px-5 md:px-10">
+
+                <div
+                    className="
+                        flex flex-col
+                        items-center lg:items-start
+                        text-center lg:text-left
+                        mb-20
+                    "
+                >
+
+                    <p className="text-[#00F6FF] text-sm tracking-[0.3rem] mb-4">
+                        {t('product_web.management.badge')}
+                    </p>
+
+                    <h2
+                        className="
+                            text-white
+                            text-4xl md:text-6xl
+                            font-bold
+                            leading-tight
+                            mb-6
+                            max-w-[800px]
+                        "
+                    >
+                        {t('product_web.management.title')}
+                    </h2>
+
+                    <p
+                        className="
+                            text-[#9CA3AF]
+                            text-sm md:text-lg
+                            leading-relaxed
+                            max-w-[700px]
+                        "
+                    >
+                        {t('product_web.management.about')}
+                    </p>
+
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-30">
+
+                    <div className="overflow-hidden">
+
+                        <Image
+                            src={firstSection.img}
+                            alt={firstSection.title}
+                            width={1600}
+                            height={1200}
+                            className="
+                                w-full
+                                h-auto
+                                object-cover
+                            "
+                        />
+
+                    </div>
+
+                    <div
+                        className="
+                            lg:sticky
+                            lg:top-20
+                            h-fit
+                            self-start
+                        "
+                    >
+
+                        <h3
+                            className="
+                                text-white
+                                text-3xl md:text-5xl
+                                font-bold
+                                mb-5
+                                text-center lg:text-left
+                            "
+                        >
+                            {firstSection.title}
+                        </h3>
+
+                        <p
+                            className="
+                                text-[#9CA3AF]
+                                text-sm md:text-lg
+                                leading-relaxed
+                                text-center lg:text-left
+                            "
+                        >
+                            {firstSection.about}
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                    <div className="grid grid-cols-2 gap-5">
+
+                        <div className="col-span-2 overflow-hidden">
+
+                            <Image
+                                src={secondSection.images[0]}
+                                alt="Mobile Preview"
+                                width={1400}
+                                height={900}
+                                className="
+                                    w-full
+                                    h-auto
+                                    object-cover
+                                "
+                            />
+
+                        </div>
+
+                        <div className="overflow-hidden">
+
+                            <Image
+                                src={secondSection.images[1]}
+                                alt="Mobile Preview"
+                                width={800}
+                                height={1600}
+                                className="
+                                    w-full
+                                    h-auto
+                                    object-cover
+                                "
+                            />
+
+                        </div>
+
+                        <div className="overflow-hidden">
+
+                            <Image
+                                src={secondSection.images[2]}
+                                alt="Mobile Preview"
+                                width={800}
+                                height={1600}
+                                className="
+                                    w-full
+                                    h-auto
+                                    object-cover
+                                "
+                            />
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        className="
+                            lg:sticky
+                            lg:top-60
+                            h-fit
+                            self-start
+                        "
+                    >
+
+                        <h3
+                            className="
+                                text-white
+                                text-3xl md:text-5xl
+                                font-bold
+                                mb-5
+                                text-center lg:text-left
+                            "
+                        >
+                            {secondSection.title}
+                        </h3>
+
+                        <p
+                            className="
+                                text-[#9CA3AF]
+                                text-sm md:text-lg
+                                leading-relaxed
+                                text-center lg:text-left
+                            "
+                        >
+                            {secondSection.about}
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    )
+}
+
 
 export default function Products(){
 
@@ -40,6 +432,13 @@ export default function Products(){
         {icon: "/logos/whatsapp.png", alt:"Whastapp Logo"},
         {icon: "/logos/discord.png", alt:"Discord Logo"},
         {icon: "/logos/ifood.png", alt:"Ifood Logo"},
+    ]
+
+    const design = [
+        {img:"/products/2/1.png", alt:""},
+        {img:"/products/3.png", alt:""},
+        {img:"/products/4.png", alt:""},
+        {img:"/products/5/1.png", alt:""},
     ]
 
     const isJP = i18n.language === "jp"
@@ -83,6 +482,17 @@ export default function Products(){
                 </div>
             </div>
             
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto px-10">
+                {design.map((p, index) => (
+                    <NotebookMockup 
+                    key={index}
+                    img={p.img}
+                    alt={p.alt}/>
+                ))}
+            </div>
+            
+            {/* 
             <div className="flex justify-center px-10">
             <div>
             <a href="/products" className="relative flex justify-center w-full max-w-300 z-10">
@@ -103,7 +513,7 @@ export default function Products(){
             />
             </a>
             </div>
-            </div>
+            </div>*/}
                             
         <div className="flex justify-center">
             <p className="pt-15 pb-5 px-20 pr-40 sm:pr-100 dark:text-white text-black  text-[20px] md:text-[35px] text-nowrap">
@@ -111,66 +521,124 @@ export default function Products(){
             </p>
         </div>
         
-        <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
-            {services.map((s, index) => (
-                <div key={index} className="w-50 h-50 border-[#00F6FF] border rounded-3xl flex flex-col justify-center items-center p-5">
-                    <s.icon strokeWidth={s.stockW} className="w-[50%] h-[50%] text-[#008185]"/>
-                    <p className="text-[#00F6FF] font-bold">{s.title}</p>
-                    <p className="text-[#939393] text-[9px] text-center">{s.about}</p>
-                </div>
-            ))}
+        <div className="flex justify-center px-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-7">
+
+                {services.map((s, index) => (
+                    <div
+                        key={index}
+                        className="
+                            w-38 h-38
+                            sm:w-50 sm:h-50
+                            border-[#00F6FF]
+                            border
+                            rounded-2xl sm:rounded-3xl
+                            flex flex-col justify-center items-center
+                            p-3 sm:p-5
+                        "
+                    >
+                        <s.icon
+                            strokeWidth={s.stockW}
+                            className="w-[40%] h-[40%] sm:w-[50%] sm:h-[50%] text-[#008185]"
+                        />
+
+                        <p className="text-[#00F6FF] font-bold text-xs sm:text-base text-center">
+                            {s.title}
+                        </p>
+
+                        <p className="text-[#939393] text-[8px] sm:text-[9px] text-center">
+                            {s.about}
+                        </p>
+                    </div>
+                ))}
             </div>
         </div>
 
 
 
         <div className="flex flex-col justify-center items-center gap-5 pt-10">
-            <div className="flex space-x-2 items-center">
-                <div className="w-1 h-1 rounded-full bg-[#00F6FF] "></div>
-                <p className="dark:text-white text-black">{t('product_web.languages.title')}</p>
-                <div className="w-1 h-1 rounded-full bg-[#00F6FF] "></div>
-            </div>
 
+    <div className="flex space-x-2 items-center">
+        <div className="w-1 h-1 rounded-full bg-[#00F6FF]" />
+        <p className="dark:text-white text-black">
+            {t('product_web.languages.title')}
+        </p>
+        <div className="w-1 h-1 rounded-full bg-[#00F6FF]" />
+    </div>
 
-            <p className="text-2xs sm:text-2xl dark:text-white text-black px-10 text-wrap ">
-                {t('product_web.languages.about')}
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 opacity-50">
-                {techLogo.map((t, index) => (
-                    <div key={index} className="border-[#6C6C6C] border flex justify-center items-center p-5 w-35 sm:w-50">
-                    <Image
-                    className="w-15 h-15"
+    <p className="text-2xs sm:text-2xl dark:text-white text-black px-10 text-wrap">
+        {t('product_web.languages.about')}
+    </p>
+
+    {/* TECH LOGOS */}
+    {/*
+    <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 opacity-50">
+
+        
+        {techLogo.map((t, index) => (
+            <div
+                key={index}
+                className="
+                    border-[#6C6C6C]
+                    border
+                    flex justify-center items-center
+                    p-3 sm:p-5
+                    w-24 h-24
+                    sm:w-50 sm:h-auto
+                "
+            >
+                <Image
+                    className="w-10 h-10 sm:w-15 sm:h-15"
                     loading="lazy"
                     src={t.icon}
                     alt={t.alt}
                     width={50}
                     height={50}
-                    />
-                    </div>
-                ))}
+                />
             </div>
+        ))}
+        
+    </div>
+    */}
 
-            <div className="flex flex-col items-start">
-                <p className="dark:text-white text-black text-2xs sm:text-2xl">
-                    {t('product_web.languages.about_company')}
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 opacity-50">
-                    {techCompany.map((t, index) => (
-                    <div key={index} className="border-[#6C6C6C] border flex justify-center items-center p-5 w-35 sm:w-50">
+    <div className="flex flex-col items-start">
+
+        <p className="dark:text-white text-black text-2xs sm:text-2xl">
+            {t('product_web.languages.about_company')}
+        </p>
+
+        {/* COMPANY LOGOS */}
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4  opacity-50">
+
+            {techCompany.map((t, index) => (
+                <div
+                    key={index}
+                    className="
+                        border-[#6C6C6C]
+                        border
+                        flex justify-center items-center
+                        p-3 sm:p-5
+                        w-24 h-24
+                        sm:w-50 sm:h-auto
+                    "
+                >
                     <Image
-                    className="w-15 h-15"
-                    src={t.icon}
-                    alt={t.alt}
-                    width={50}
-                    height={50}
+                        className="w-10 h-10 sm:w-15 sm:h-15"
+                        src={t.icon}
+                        alt={t.alt}
+                        width={50}
+                        height={50}
                     />
-                    </div>
-                ))}
                 </div>
-            </div>
+            ))}
         </div>
+        </div>
+    </div>
 
-        </section>
+    <StickyShowcase/>
+
+    <StickyShowcase_Two/>
+
+    </section>
     )
 }

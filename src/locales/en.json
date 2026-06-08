@@ -128,6 +128,40 @@
     "productPage": {
       "one": "See more!",
       "two": "Some available models"
+    },
+    "showcase": {
+      "badge": "PROFESSIONAL WEBSITES",
+      "title": "More than a website. A platform for your business.",
+      "about": "Modern websites designed to showcase your products, strengthen your brand and simplify content management through intuitive administrative tools.",
+      "catalog": {
+        "title": "Product Catalog",
+        "about": "Products organized in a clear and professional way to make navigation easier and help customers quickly find what they are looking for."
+      },
+      "details": {
+        "title": "Detailed Product Pages",
+        "about": "Present product information, images and key features through a complete and engaging experience."
+      },
+      "mobile": {
+        "title": "Mobile Experience",
+        "about": "Fast and intuitive navigation for users accessing your website from smartphones and tablets."
+      },
+      "responsive": {
+        "title": "Responsive Design",
+        "about": "Layouts adapted to different screen sizes, ensuring a consistent experience across all devices."
+      }
+    },
+    "management": {
+      "badge": "CONTENT MANAGEMENT",
+      "title": "Complete control of your website in one place.",
+      "about": "Administrative tools designed to simplify product, content and information updates on both desktop and mobile devices.",
+      "dashboard": {
+        "title": "Smart Administration Panel",
+        "about": "Manage products, information and website content through an intuitive interface designed to simplify your business operations."
+      },
+      "mobile": {
+        "title": "Management on Any Device",
+        "about": "Access and update your catalog from mobile or desktop devices, keeping your website always up to date."
+      }
     }
   },
   "upgrade_img": {

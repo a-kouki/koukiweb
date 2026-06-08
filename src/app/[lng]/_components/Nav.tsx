@@ -144,7 +144,7 @@ export default function Nav() {
 
   return (
     <nav className="bg-neutral-primary fixed w-full z-200 top-0 start-0 border-b dark:border-0 border-default dark:bg-[#03152C]">
-      <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <button onClick={() => router.push(`/${locale}`)} className="flex items-center rtl:space-x-reverse pl-15 hover:cursor-pointer" type="button">
           <img src="/logo.webp" width={60} height={60} alt="Logo Company Kouki Web" className="h-15 rounded-2xl" />
         </button>
@@ -159,7 +159,7 @@ export default function Nav() {
             {CountrySvg()}
           </button>
 
-          <ThemeToggle />
+          {/*<ThemeToggle />*/}
 
           <div className="z-50 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44" id="language-dropdown-menu">
             <ul className="p-2 text-sm text-body font-medium" role="none">
@@ -223,7 +223,7 @@ export default function Nav() {
               border border-default md:border-0
               rounded-b-lg
               md:rounded-full
-              px-6 py-1 md:px-5
+              px-6 py-2 md:px-5
               md:space-x-5 lg:space-x-10
               rtl:space-x-reverse
               bg-transparent
@@ -237,11 +237,11 @@ export default function Nav() {
                   onClick={() => setActive(o.href)}
                   className={`
                     inline-flex items-center justify-center
-                    px-3 py-2 rounded-full
+                    px-3 py-1 rounded-full
                     transition-colors
                     text-black 
                     font-bold
-                    text-[17px]
+                    text-[15px]
                     hover:bg-neutral-200 hover:text-black dark:hover:text-white
                     ${active === o.href ? "text-blue-600 dark:bg-blue-700 dark:text-white" : "text-black"}
                   `}

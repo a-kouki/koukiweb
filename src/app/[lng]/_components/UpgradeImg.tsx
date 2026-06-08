@@ -139,59 +139,125 @@ export default function Upgrade() {
       </div>
 
       {imgUp.map((i, index) => (
-        <div key={index} className="flex justify-center relative py-5 sm:py-10">
-          <div className="relative z-10 flex flex-col items-start gap-y-1">
+        <div
+          key={index}
+          className="
+            flex justify-center items-center
+            relative
+            py-8 sm:py-14
+            px-4
+          "
+        >
+
+          {/* BEFORE */}
+          <div
+            className="
+              relative z-10
+              flex flex-col items-start gap-y-2
+            "
+          >
+
             <div
-              className={`
+              className="
                 relative
-                ${i.w} ${i.h} sm:w-${i.smW} sm:h-${i.smH}
+                w-[190px] h-[120px]
+                sm:w-[320px] sm:h-[180px]
+                md:w-[420px] md:h-[240px]
                 overflow-hidden
                 [clip-path:polygon(0_0,100%_0,78%_100%,0_100%)]
-              `}
+                shadow-[0_15px_40px_rgba(0,0,0,0.35)]
+              "
             >
+
               <Image
                 src={i.im_1}
                 alt={`${t("upgrade_img.before")} — ${i.label} ${index + 1}`}
                 fill
                 loading="lazy"
-                sizes="(max-width: 640px) 160px, 280px"
-                className="object-cover"
+                sizes="(max-width:768px) 200px, 420px"
+                className="
+                  object-cover
+                  object-center
+                "
               />
+
             </div>
-            <div className="bg-linear-to-r from-[#00F6FF] to-transparent rounded-full p-0.5">
-              <p className="px-5 dark:bg-black bg-white rounded-full dark:text-white text-black text-2xs sm:text-[14px]">
+
+            <div className="bg-linear-to-r from-[#00F6FF] to-transparent rounded-full p-[1px]">
+              <p
+                className="
+                  px-4 py-1
+                  dark:bg-black bg-white
+                  rounded-full
+                  dark:text-white text-black
+                  text-[10px] sm:text-sm
+                "
+              >
                 {t("upgrade_img.before")}
               </p>
             </div>
+
           </div>
 
-          <div className="relative z-20 flex flex-col items-end -ml-10 sm:-ml-14 gap-y-1">
-            <div className="bg-linear-to-l from-[#00F6FF] to-transparent rounded-full p-0.5">
-              <p className="px-5 dark:bg-black bg-white rounded-full dark:text-white text-black text-2xs sm:text-[14px]">
+          {/* AFTER */}
+          <div
+            className="
+              relative z-20
+              flex flex-col items-end gap-y-2
+              -ml-10 sm:-ml-20
+            "
+          >
+
+            <div className="bg-linear-to-l from-[#00F6FF] to-transparent rounded-full p-[1px]">
+              <p
+                className="
+                  px-4 py-1
+                  dark:bg-black bg-white
+                  rounded-full
+                  dark:text-white text-black
+                  text-[10px] sm:text-sm
+                "
+              >
                 {t("upgrade_img.after")}
               </p>
             </div>
+
             <div
-              className={`
+              className="
                 relative
-                ${i.w} ${i.h} sm:w-${i.smW} sm:h-${i.smH}
+                w-[190px] h-[120px]
+                sm:w-[320px] sm:h-[180px]
+                md:w-[420px] md:h-[240px]
                 overflow-hidden
                 [clip-path:polygon(22%_0,100%_0,100%_100%,0_100%)]
-              `}
+              "
             >
+
               <Image
                 src={i.im_2}
                 alt={`${t("upgrade_img.after")} — ${i.label} ${index + 1}`}
                 fill
                 loading="lazy"
-                sizes="(max-width: 640px) 160px, 280px"
-                className="object-cover"
+                sizes="(max-width:768px) 200px, 420px"
+                className="
+                  object-cover
+                  object-center
+                "
               />
+
             </div>
+
           </div>
+
         </div>
       ))}
 
+
+    </section>
+  );
+}
+
+      {/*
       <div className="flex flex-col justify-center items-center text-[12px] px-10 pt-5">
         <h3 className="dark:text-white text-[20px] sm:text-3xl font-bold text-black">
           {t("upgrade_img.logo.title.one")}
@@ -319,6 +385,4 @@ export default function Upgrade() {
 
         <p className="text-2xs text-gray-500">{t("upgrade_img.example")}</p>
       </div>
-    </section>
-  );
-}
+      */}

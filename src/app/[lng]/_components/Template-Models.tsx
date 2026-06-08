@@ -134,7 +134,6 @@ export default function Templates() {
                   width={900}
                   height={1400}
                   className="w-full h-auto"
-                  priority
                 />
               </div>
             </div>
@@ -190,7 +189,6 @@ export default function Templates() {
                   {template.imgs.map((img, i) => (
                     <div key={i} className="flex flex-col gap-2 items-center w-full">
 
-<<<<<<< HEAD
                       <button
                         className="
                           group relative w-full
@@ -208,8 +206,7 @@ export default function Templates() {
                           width={400}
                           height={600}
                           className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
-                          loading={modelIndex === 0 && i === 0 ? "eager" : "lazy"}
-                          priority={modelIndex === 0 && i === 0}
+                          loading= "lazy" 
                         />
 
                         <span className="absolute inset-0 bg-[#00F6FF]/0 group-hover:bg-[#00F6FF]/5 transition-colors duration-300 pointer-events-none" />
@@ -255,27 +252,11 @@ export default function Templates() {
                       )}
                     </div>
                   ))}
-=======
-                                    { (index == 0 && i == 1) && 
-                                    <a href="/template-models/model-1" target="_blank" rel="noopener noreferrer" className="bg-[#D20A2E] rounded-4xl text-white flex justify-center items-center py-2 w-[80%]">link</a>
-                                    }
-                                    { (index == 1 && i == 1) && 
-                                    <a href="/template_2" target="_blank" rel="noopener noreferrer" className="bg-[#D20A2E] rounded-4xl text-white flex justify-center items-center py-2 w-[80%]">link</a>
-                                    }
-                                    
-                                </div>
-                            ))}
-                            </div>
-                            </div>
-                        ))
-                    }
->>>>>>> 96d2e449326dc3e9687a7f8a115c769ff22c3c0d
                 </div>
               </div>
             ))}
           </div>
 
-<<<<<<< HEAD
           <div className="mt-20">
 
             <div className="flex justify-center mb-10">
@@ -360,7 +341,3 @@ export default function Templates() {
     </>
   )
 }
-=======
-    )
-}
->>>>>>> 96d2e449326dc3e9687a7f8a115c769ff22c3c0d
