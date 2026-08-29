@@ -19,7 +19,7 @@
     "whatsapp": "",
     "instagram": "",
     "email": "",
-    "about": "Todo lo que tu sitio web necesita, desde la planificación hasta el mantenimiento continuo. Creamos y gestionamos tu sitio para que se mantenga actualizado, rápido, seguro y alineado con el crecimiento de tu negocio.",
+    "about": "Para negocios que quieren vender, mostrar y crecer en línea",    
     "tema": {
       "one": "PRESENCIA",
       "two": "DIGITAL"
@@ -31,7 +31,6 @@
     "topic_2": "SERVICIOS",
     "container": {
       "one": {
-        "title": "Creación y Gestión de Sitios Web",
         "about": "Desarrollamos sitios web modernos y responsivos, alineados con la identidad de tu marca, con enfoque en la conversión y la experiencia del usuario.",
         "subs": {
           "one": {
@@ -42,6 +41,10 @@
             "title": "Plantilla Profesional",
             "text": "Diseños listos y optimizados. Los personalizamos con su marca y ofrecemos una mensualidad accesible para mantener su sitio siempre en línea.",
             "more":"Ver más"
+          },
+          "three": {
+            "title": "Sistemas Personalizados",
+            "text": "Dashboards, automatizaciones y plataformas de pedidos a medida — soluciones que van más allá del sitio web, creadas para el funcionamiento real de tu negocio."
           }
         }
       },
@@ -88,9 +91,9 @@
 
   },
   "product_web": {
-    "title": "PRODUCTOS",
-    "subtitle": "Productos Web",
-    "about": "Soluciones a medida para distintos tipos de negocios, con enfoque en rendimiento, escalabilidad y rentabilidad. Descubre algunos modelos disponibles:",
+    "title": "PROYECTOS",
+    "subtitle": "Hechos a medida",
+    "about": "Soluciones a medida para diferentes tipos de negocios, con un enfoque en rendimiento, escalabilidad y relación costo-beneficio. Vea algunos ejemplos:",
     "service_sub": "Qué incluye",
     "services": {
       "one": {
@@ -164,6 +167,35 @@
         "title": "Gestión en Cualquier Dispositivo",
         "about": "Accede y actualiza tu catálogo desde el móvil o el ordenador, manteniendo tu sitio siempre actualizado."
       }
+    },
+    "system": {
+    "title": "Para tus necesidades",
+    "subtitle": "Sistemas a medida",
+    "about": "Cada negocio funciona de manera diferente, por eso cada sistema se diseña en torno a la forma en que ya trabajas, y no al revés. A continuación, algunos ejemplos de funcionalidades ya implementadas en proyectos reales:",
+    "list": {
+      "one": {
+        "title": "Gestión",
+        "list": {
+          "one": "Registro y organización de productos",
+          "two": "Categorías personalizadas"
+        }
+      },
+      "two": {
+        "title": "Automatización y Pedidos",
+        "list": {
+          "one": "Seguimiento de pedidos",
+          "two": "Sistemas específicos para la gestión de pedidos"
+        }
+      },
+      "three": {
+        "title": "Métricas",
+        "list": {
+          "one": "Métricas de rendimiento en tiempo real",
+          "two": "Seguimiento del ticket promedio"
+        }
+      }
+    },
+    "more": "Estas son solo algunas posibilidades. Cada solución se diseña en torno a lo que tu negocio realmente necesita."
     }
   },
   "upgrade_img": {

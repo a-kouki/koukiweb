@@ -17,7 +17,7 @@ function NotebookMockup({ img, alt }: Products) {
   return (
     <div className="flex justify-center py-2 px-5 md:px-0">
       <div className="w-full max-w-[680px]">
-        <div className="bg-gray-50 border-2 border-[#2d3f55] rounded-[14px] p-[14px] pb-0 ">
+        <div className="bg-gray-50 border-2 border-[#2d3f55] rounded-[12px] py-[14px] px-2 pb-0 ">
 
           {/* Top buttons */}
           <div className="flex items-center gap-1.5 mb-2.5">
@@ -27,7 +27,7 @@ function NotebookMockup({ img, alt }: Products) {
           </div>
 
           {/* Screen */}
-          <div className="bg-[#0a1628] rounded-t-[6px] h-[320px] overflow-y-auto overflow-x-hidden relative">
+          <div className="bg-[#0a1628] rounded-t-[6px] h-[320px] overflow-y-auto overflow-x-hidden relative border-2 bo">
             <Image
               src={img}
               alt={alt}
@@ -87,7 +87,7 @@ export function StickyShowcase() {
 
                     <div
                         className="
-                            sticky
+                            lg:sticky
                             top-15 lg:top-20
                             z-20
                             h-fit
@@ -151,7 +151,7 @@ export function StickyShowcase() {
                             </div>
                         ))}
 
-                        <div className="grid grid-cols-2 gap-5 h-100 md:h-150">
+                        <div className="grid grid-cols-2 gap-5 h-90 md:h-150">
 
                             {verticalImages.map((item, index) => (
                                 <div
@@ -400,6 +400,161 @@ export function StickyShowcase_Two() {
     )
 }
 
+export function StickyShowcase_Three() {
+
+    const [t] = useTranslation()
+
+    const normalImages = [
+        {
+            img: '/savanna/1.png',
+            title: "",
+            about: "",
+        },
+        {
+            img: '/savanna/4.gif',
+            title: "",
+            about: "",
+        }
+    ]
+
+    const verticalImages = [
+        {
+            img: '/savanna/5.png',
+            title: "",
+            about: "",
+        },
+        {
+            img: '/savanna/6.png',
+            title: "",
+            about: "",
+        }
+    ]
+
+    return (
+        <section id="system" className="bg-[#03152C] py-20">
+
+            <div className="max-w-7xl mx-auto px-5 md:px-10">
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                    <div
+                        className="
+                            lg:sticky
+                            top-15 lg:top-20
+                            z-20
+                            h-fit
+                            bg-[#03152C]/90
+                            backdrop-blur-md
+                            py-6
+                            self-start
+                        "
+                        >
+                        <p className="font-jetbrainsMono text-[#00F6FF] text-sm uppercase tracking-[0.3rem] mb-4">
+                            {t('product_web.system.subtitle')}
+                        </p>
+
+                        <h2 className="font-fraunces text-white text-4xl md:text-6xl font-semibold leading-tight mb-6">
+                            {t('product_web.system.title')}
+                        </h2>
+
+                        <p className="font-abeezee text-[#9CA3AF] text-sm md:text-lg leading-relaxed max-w-[500px] mb-8">
+                            {t('product_web.system.about')}
+                        </p>
+
+                        <div className="flex flex-col gap-5 max-w-[500px]">
+                            {[
+                            {
+                                group: `${t('product_web.system.list.one.title')}`,
+                                items: [`${t('product_web.system.list.one.list.one')}`, `${t('product_web.system.list.one.list.two')}`],
+                            },
+                            {
+                                group: `${t('product_web.system.list.two.title')}`,
+                                items: [`${t('product_web.system.list.two.list.one')}`, `${t('product_web.system.list.two.list.two')}`],
+                            },
+                            {
+                                group: `${t('product_web.system.list.three.title')}`,
+                                items: [`${t('product_web.system.list.three.list.one')}`, `${t('product_web.system.list.three.list.two')}`],
+                            },
+                            ].map((section) => (
+                            <div key={section.group}>
+                                <p className="font-abeezee text-white text-sm font-semibold mb-2">{section.group}</p>
+                                <ul className="flex flex-col gap-2">
+                                {section.items.map((item) => (
+                                    <li key={item} className="flex items-start gap-3 font-abeezee text-[#9CA3AF] text-sm md:text-base">
+                                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00F6FF] shrink-0" />
+                                    {item}
+                                    </li>
+                                ))}
+                                </ul>
+                            </div>
+                            ))}
+                        </div>
+
+                        {/* Outras aplicações — reforça amplitude sem precisar de parágrafo */}
+                        <p className="font-abeezee text-[#9CA3AF]/70 text-xs md:text-sm italic leading-relaxed max-w-[500px] mt-8">
+                            {t('product_web.system.more')}
+                        </p>
+                        </div>
+
+                    <div className="flex flex-col gap-8">
+
+                        {normalImages.map((item, index) => (
+                            <div
+                                key={index}
+                                className="
+                                    overflow-hidden
+                                    shadow-[0_20px_60px_rgba(0,0,0,0.35)]
+                                "
+                            >
+                                <Image
+                                    src={item.img}
+                                    alt={item.title}
+                                    width={1600}
+                                    height={1200}
+                                    className="
+                                        w-full
+                                        h-auto
+                                        object-cover
+                                    "
+                                />
+                            </div>
+                        ))}
+
+                        <div className="grid grid-cols-2 gap-5 h-auto">
+
+                            {verticalImages.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="
+                                        overflow-hidden
+                                    "
+                                >
+                                    <Image
+                                        src={item.img}
+                                        alt={item.title}
+                                        width={800}
+                                        height={1600}
+                                        className="
+                                            w-full
+                                            h-auto
+                                            object-cover
+                                        "
+                                    />
+                                </div>
+                            ))}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    )
+}
+
 
 export default function Products(){
 
@@ -445,6 +600,13 @@ export default function Products(){
 
     return (
         <section id="products-web" className="bg-neutral-primary dark:bg-[#03152C]">
+
+            <StickyShowcase/>
+
+            <StickyShowcase_Two/>
+
+            <StickyShowcase_Three />
+
             <div className="flex justify-center px-10">
                 <div className="flex flex-col justify-center pt-25 space-y-10">
                 <div className="relative">
@@ -515,130 +677,126 @@ export default function Products(){
             </div>
             </div>*/}
                             
-        <div className="flex justify-center">
-            <p className="pt-15 pb-5 px-20 pr-40 sm:pr-100 dark:text-white text-black  text-[20px] md:text-[35px] text-nowrap">
-                {t('product_web.service_sub')}
-            </p>
-        </div>
-        
-        <div className="flex justify-center px-4">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-7">
+            <div className="flex justify-center">
+                <p className="pt-15 pb-5 px-20 pr-40 sm:pr-100 dark:text-white text-black  text-[20px] md:text-[35px] text-nowrap">
+                    {t('product_web.service_sub')}
+                </p>
+            </div>
+            
+            <div className="flex justify-center px-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-7">
 
-                {services.map((s, index) => (
+                    {services.map((s, index) => (
+                        <div
+                            key={index}
+                            className="
+                                w-38 h-38
+                                sm:w-50 sm:h-50
+                                border-[#00F6FF]
+                                border
+                                rounded-2xl sm:rounded-3xl
+                                flex flex-col justify-center items-center
+                                p-3 sm:p-5
+                            "
+                        >
+                            <s.icon
+                                strokeWidth={s.stockW}
+                                className="w-[40%] h-[40%] sm:w-[50%] sm:h-[50%] text-[#008185]"
+                            />
+
+                            <p className="text-[#00F6FF] font-bold text-xs sm:text-base text-center">
+                                {s.title}
+                            </p>
+
+                            <p className="text-[#939393] text-[8px] sm:text-[9px] text-center">
+                                {s.about}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+
+
+            <div className="flex flex-col justify-center items-center gap-5 pt-10">
+
+            <div className="flex space-x-2 items-center">
+                <div className="w-1 h-1 rounded-full bg-[#00F6FF]" />
+                <p className="dark:text-white text-black">
+                    {t('product_web.languages.title')}
+                </p>
+                <div className="w-1 h-1 rounded-full bg-[#00F6FF]" />
+            </div>
+
+            <p className="text-2xs sm:text-2xl dark:text-white text-black px-10 text-wrap">
+                {t('product_web.languages.about')}
+            </p>
+
+            {/* TECH LOGOS */}
+            {/*
+            <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 opacity-50">
+
+                
+                {techLogo.map((t, index) => (
                     <div
                         key={index}
                         className="
-                            w-38 h-38
-                            sm:w-50 sm:h-50
-                            border-[#00F6FF]
+                            border-[#6C6C6C]
                             border
-                            rounded-2xl sm:rounded-3xl
-                            flex flex-col justify-center items-center
+                            flex justify-center items-center
                             p-3 sm:p-5
+                            w-24 h-24
+                            sm:w-50 sm:h-auto
                         "
                     >
-                        <s.icon
-                            strokeWidth={s.stockW}
-                            className="w-[40%] h-[40%] sm:w-[50%] sm:h-[50%] text-[#008185]"
+                        <Image
+                            className="w-10 h-10 sm:w-15 sm:h-15"
+                            loading="lazy"
+                            src={t.icon}
+                            alt={t.alt}
+                            width={50}
+                            height={50}
                         />
-
-                        <p className="text-[#00F6FF] font-bold text-xs sm:text-base text-center">
-                            {s.title}
-                        </p>
-
-                        <p className="text-[#939393] text-[8px] sm:text-[9px] text-center">
-                            {s.about}
-                        </p>
                     </div>
                 ))}
+                
             </div>
-        </div>
+            */}
 
+            <div className="flex flex-col items-start">
 
+                <p className="dark:text-white text-black text-2xs sm:text-2xl">
+                    {t('product_web.languages.about_company')}
+                </p>
 
-        <div className="flex flex-col justify-center items-center gap-5 pt-10">
+                {/* COMPANY LOGOS */}
+                <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4  opacity-50">
 
-    <div className="flex space-x-2 items-center">
-        <div className="w-1 h-1 rounded-full bg-[#00F6FF]" />
-        <p className="dark:text-white text-black">
-            {t('product_web.languages.title')}
-        </p>
-        <div className="w-1 h-1 rounded-full bg-[#00F6FF]" />
-    </div>
-
-    <p className="text-2xs sm:text-2xl dark:text-white text-black px-10 text-wrap">
-        {t('product_web.languages.about')}
-    </p>
-
-    {/* TECH LOGOS */}
-    {/*
-    <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 opacity-50">
-
-        
-        {techLogo.map((t, index) => (
-            <div
-                key={index}
-                className="
-                    border-[#6C6C6C]
-                    border
-                    flex justify-center items-center
-                    p-3 sm:p-5
-                    w-24 h-24
-                    sm:w-50 sm:h-auto
-                "
-            >
-                <Image
-                    className="w-10 h-10 sm:w-15 sm:h-15"
-                    loading="lazy"
-                    src={t.icon}
-                    alt={t.alt}
-                    width={50}
-                    height={50}
-                />
-            </div>
-        ))}
-        
-    </div>
-    */}
-
-    <div className="flex flex-col items-start">
-
-        <p className="dark:text-white text-black text-2xs sm:text-2xl">
-            {t('product_web.languages.about_company')}
-        </p>
-
-        {/* COMPANY LOGOS */}
-        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4  opacity-50">
-
-            {techCompany.map((t, index) => (
-                <div
-                    key={index}
-                    className="
-                        border-[#6C6C6C]
-                        border
-                        flex justify-center items-center
-                        p-3 sm:p-5
-                        w-24 h-24
-                        sm:w-50 sm:h-auto
-                    "
-                >
-                    <Image
-                        className="w-10 h-10 sm:w-15 sm:h-15"
-                        src={t.icon}
-                        alt={t.alt}
-                        width={50}
-                        height={50}
-                    />
+                    {techCompany.map((t, index) => (
+                        <div
+                            key={index}
+                            className="
+                                border-[#6C6C6C]
+                                border
+                                flex justify-center items-center
+                                p-3 sm:p-5
+                                w-24 h-24
+                                sm:w-50 sm:h-auto
+                            "
+                        >
+                            <Image
+                                className="w-10 h-10 sm:w-15 sm:h-15"
+                                src={t.icon}
+                                alt={t.alt}
+                                width={50}
+                                height={50}
+                            />
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
-        </div>
-    </div>
+                </div>
+            </div>
 
-    <StickyShowcase/>
-
-    <StickyShowcase_Two/>
-
-    </section>
+        </section>
     )
 }

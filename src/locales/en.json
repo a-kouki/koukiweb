@@ -19,8 +19,7 @@
     "whatsapp": "",
     "instagram": "",
     "email": "",
-    "about": "Everything your website needs, from planning to continuous maintenance. We create and manage your site so it remains up to date, fast, secure, and aligned with your business growth.",
-    "tema": {
+    "about": "For businesses that want to sell, showcase, and grow online",    "tema": {
       "one": "DIGITAL",
       "two": "PRESENCE"
     }
@@ -31,7 +30,6 @@
     "topic_2": "SERVICES",
     "container": {
       "one": {
-        "title": "Website Creation and Management",
         "about": "We develop modern and responsive websites aligned with your brand identity, focusing on conversion and user experience.",
         "subs": {
           "one": {
@@ -42,6 +40,10 @@
             "title": "Professional Template",
             "text": "Ready-made and optimized layouts. We customize them with your brand and offer an affordable monthly plan to keep your website always online.",
             "more":"more"
+          },
+          "three": {
+            "title": "Custom Systems",
+            "text": "Dashboards, automations, and custom-built ordering platforms — solutions that go beyond a website, designed around the real needs of your business."
           }
         }      
       },
@@ -86,9 +88,9 @@
 
   },
   "product_web": {
-    "title": "PRODUCTS",
-    "subtitle": "Web Products",
-    "about": "Tailored solutions for different types of businesses, focused on performance, scalability, and cost-effectiveness. Discover some available models:",
+    "title": "PROJECTS",
+    "subtitle": "Custom Built",
+    "about": "Tailored solutions for different types of businesses, focused on performance, scalability, and cost-effectiveness. See some examples:",
     "service_sub": "What’s included",
     "services": {
       "one": {
@@ -162,7 +164,36 @@
         "title": "Management on Any Device",
         "about": "Access and update your catalog from mobile or desktop devices, keeping your website always up to date."
       }
-    }
+    },
+    "system": {
+    "title": "For Your Needs",
+    "subtitle": "Custom-Built Systems",
+    "about": "Every business works differently, which is why each system is designed around the way you already work, not the other way around. Below are some examples of features already implemented in real-world projects:",
+    "list": {
+      "one": {
+        "title": "Management",
+        "list": {
+          "one": "Product registration and organization",
+          "two": "Custom categories"
+        }
+      },
+      "two": {
+        "title": "Automation & Orders",
+        "list": {
+          "one": "Order tracking",
+          "two": "Custom systems for order management"
+        }
+      },
+      "three": {
+        "title": "Metrics",
+        "list": {
+          "one": "Real-time performance metrics",
+          "two": "Average order value tracking"
+        }
+      }
+    },
+    "more": "These are just a few possibilities. Each solution is designed around what your business actually needs."
+  }
   },
   "upgrade_img": {
     "title": "Upgrade",
