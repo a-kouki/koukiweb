@@ -134,7 +134,6 @@ export default function Templates() {
                   width={900}
                   height={1400}
                   className="w-full h-auto"
-                  priority
                 />
               </div>
             </div>
@@ -207,7 +206,7 @@ export default function Templates() {
                           width={400}
                           height={600}
                           className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
-                          loading="lazy"
+                          loading= "lazy" 
                         />
 
                         <span className="absolute inset-0 bg-[#00F6FF]/0 group-hover:bg-[#00F6FF]/5 transition-colors duration-300 pointer-events-none" />
@@ -341,5 +340,4 @@ export default function Templates() {
       </section>
     </>
   )
-
 }

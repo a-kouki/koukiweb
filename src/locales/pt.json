@@ -19,7 +19,7 @@
     "whatsapp": "",
     "instagram": "",
     "email": "",
-    "about": "Tudo o que o seu site precisa, do planejamento à manutenção contínua. Criamos e cuidamos do seu site para que ele permaneça atualizado, rápido, seguro e alinhado ao crescimento do seu negócio.",
+    "about": "Para negócios que querem vender, mostrar e crescer online",
     "tema": {
       "one": "PRESENÇA",
       "two": "DIGITAL"
@@ -31,7 +31,6 @@
     "topic_2": "SERVIÇOS",
     "container": {
       "one": {
-        "title": "Criação e Gestão de Sites",
         "about": "Desenvolvemos sites modernos e responsivos, alinhados à identidade da sua marca, com foco em conversão e na experiência do usuário.",
         "subs": {
           "one": {
@@ -42,6 +41,10 @@
             "title": "Template Profissional",
             "text": "Layouts prontos e otimizados. Personalizamos com sua marca e oferecemos mensalidade acessível para manter seu site sempre online.",
             "more":"mais"
+          },
+          "three": {
+            "title": "Sistemas Personalizados",
+            "text": "Dashboards, automações e plataformas de pedidos sob medida — soluções que vão além do site, criadas para o funcionamento real do seu negócio."
           }
         }
       },
@@ -85,9 +88,9 @@
     }
   },
   "product_web": {
-    "title": "PRODUTOS",
-    "subtitle": "Produtos Web",
-    "about": "Soluções sob medida para diferentes tipos de negócios, com foco em desempenho, escalabilidade e custo-benefício. Conheça alguns modelos disponíveis:",
+    "title": "PROJETOS",
+    "subtitle": "Feitos sob medida",
+    "about": "Soluções sob medida para diferentes tipos de negócios, com foco em desempenho, escalabilidade e custo-benefício. Veja alguns exemplos:",
     "service_sub": "O que está incluso",
     "services": {
       "one": {
@@ -127,6 +130,51 @@
     "productPage": {
       "one": "Veja mais!",
       "two": "Alguns modelos disponíveis"
+    },
+    "showcase": {
+      "badge": "SITES PROFISSIONAIS",
+      "title": "Mais do que um site. Uma plataforma para o seu negócio.",
+      "about": "Sites modernos desenvolvidos para apresentar seus produtos, fortalecer sua marca e facilitar a gestão do conteúdo através de ferramentas administrativas intuitivas.",
+      "catalog": {
+        "title": "Catálogo de Produtos",
+        "about": "Produtos organizados de forma clara e profissional para facilitar a navegação e ajudar seus clientes a encontrarem o que procuram."
+      },
+      "details": {
+        "title": "Páginas de Detalhes",
+        "about": "Apresente informações, imagens e características importantes dos seus produtos em uma experiência completa e atrativa."
+      },
+      "mobile": {
+        "title": "Experiência Mobile",
+        "about": "Navegação rápida e intuitiva para usuários que acessam seu site através de smartphones e tablets."
+      },
+      "responsive": {
+        "title": "Design Responsivo",
+        "about": "Layouts adaptados para diferentes tamanhos de tela, garantindo uma experiência consistente em qualquer dispositivo."
+      }
+    },
+    "management": {
+      "badge": "GESTÃO DE CONTEÚDO",
+      "title": "Controle total do seu site em um só lugar.",
+      "about": "Ferramentas administrativas desenvolvidas para simplificar a atualização de produtos, informações e conteúdos, tanto no computador quanto no celular.",
+      "dashboard": {
+        "title": "Painel Administrativo Inteligente",
+        "about": "Gerencie produtos, informações e conteúdos do seu site através de uma interface intuitiva, desenvolvida para facilitar a administração do seu negócio."
+      },
+      "mobile": {
+        "title": "Gestão em Qualquer Dispositivo",
+        "about": "Acesse e atualize seu catálogo pelo celular ou computador, mantendo seu site sempre atualizado com praticidade e agilidade."
+      }
+    },
+    "system":{
+      "title":"Para as suas necessidades",
+      "subtitle":"Sistemas sob medida",
+      "about":"Cada negócio funciona de um jeito diferente, por isso, cada sistema é desenhado em torno da forma como você já trabalha, não o contrário. Abaixo, alguns exemplos de funcionalidades já implementadas em projetos reais:",
+      "list":{
+        "one":{"title":"Gestão" , "list":{"one":"Cadastro e organização de produtos", "two":"Categorias personalizadas"}},
+        "two":{"title":"Automação & Pedidos" , "list":{"one":"Rastreamento de pedidos", "two":"Sistemas específicos para gestão de ordens"}},
+        "three":{"title":"Métricas" , "list":{"one":"Métricas de desempenho em tempo real", "two":"Acompanhamento de ticket médio"}}
+      },
+      "more":"Essas são só algumas possibilidades, cada solução é desenhada em torno do que o seu negócio realmente precisa."
     }
   },
   "upgrade_img": {

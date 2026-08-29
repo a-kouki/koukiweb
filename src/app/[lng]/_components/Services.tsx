@@ -1,9 +1,12 @@
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { TbDeviceIpadCode, TbPencilStar, TbLayoutGridAdd } from "react-icons/tb";
+import { TbDeviceIpadCode, TbPencilStar, TbLayoutGridAdd  } from "react-icons/tb";
+
+import { GrSystem } from "react-icons/gr";
+
 
 export default function Services() {
-  const [t] = useTranslation();
+  const {t} = useTranslation();
 
   const contentService = [
     {
@@ -16,9 +19,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="bg-neutral-primary dark:bg-[#03152C]">
+    <section id="services" className="bg-white dark:bg-[#03152C]">
       {/* ── Cabeçalho ── */}
-      <div className="relative flex justify-center pt-25 sm:pt-40 pb-20">
+      <div className="relative flex justify-center pt-25 sm:pt-40 pb-10">
         <div className="relative flex flex-col items-center">
           {/* Badge título */}
           <div className="absolute -top-9 sm:-top-11 md:-top-15 z-20">
@@ -41,29 +44,25 @@ export default function Services() {
         </div>
       </div>
 
-      {/* ── Cards no estilo da referência ── */}
-      <div className="flex flex-col items-center gap-5 px-4 ">
-        {contentService.map((c, index) => (
-          <ServiceCard key={index} icon={c.icon} title={c.title} about={c.about} />
-        ))}
-      </div>
 
-      {/* ── Divisor ── */}
-      <div className="flex justify-center">
-        <div className="flex justify-center border-dashed border h-20 border-white/20" />
+      <div className="flex flex-col justify-center items-center px-6 pb-14">
+        <p className="font-abeezee text-center text-neutral-400 text-sm sm:text-base max-w-xl leading-6">
+          {t("services.container.one.about")}
+        </p>
       </div>
 
       {/* ── Sub-cards inferiores no estilo da referência ── */}
       <div className="flex flex-col items-center gap-5 px-4 pb-20">
 
-        {/* Sub-card 1 */}
+        {/* Sub-card 3 */}
         <div className="relative group w-full max-w-2xl">
           <div className="absolute left-0 top-6 w-1 h-16 bg-blue-600 rounded-r-full z-10" />
-          <div className="
+          <div
+            className={`
             relative z-20 ml-4
             flex flex-row items-center
             bg-[#0C1117]
-            border border-gray-700
+            
             rounded-2xl
             pl-6 pr-0 py-0
             gap-6
@@ -72,11 +71,67 @@ export default function Services() {
             transition-all duration-300
             hover:border-cyan-500/50
             hover:shadow-[0_0_30px_rgba(0,246,255,0.08)]
+          `}
+          >
+            <div className="absolute -top-10 -left-10 w-40 h-40 bg-cyan-400/5 rounded-full blur-3xl pointer-events-none" />
+
+            {/* Ícone */}
+            <div className="shrink-0 w-14 h-14 flex items-center justify-center ">
+              <GrSystem  className="w-7 h-7 text-cyan-400" />
+            </div>
+
+            {/* Texto + botão */}
+            <div className="flex flex-col sm:flex-row flex-1 min-w-0 items-end">
+                <div className="flex flex-col gap-2 flex-1 min-w-0 py-6">
+                    <h3 className="text-white text-xl font-semibold leading-tight">
+                        {t("services.container.one.subs.three.title")}
+                    </h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                        {t("services.container.one.subs.three.text")}
+                    </p>
+                    
+                    <a
+                        href="#system"
+                        className="mt-1 z-10 self-start h-8 px-5 flex items-center justify-center text-white text-sm bg-blue-600 rounded-full hover:bg-blue-700 transition"
+                    >
+                        {t("services.container.one.subs.two.more")}
+                    </a>
+                </div>
+
+                {/* 3 imagens lado a lado sangrando na borda direita/baixo */}
+                <div className="absolute bottom-0 right-0 w-30 h-15 sm:relative shrink-0 self-stretch sm:w-50 md:h-auto sm:h-auto  ">
+                    <Image
+                    src="/savanna/4.gif"
+                    alt="service"
+                    fill
+                    loading="lazy"
+                    className="object-cover object-center"
+                  />
+                </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Sub-card 1 */}
+        <div className="relative group w-full max-w-2xl">
+          <div className="absolute left-0 top-6 w-1 h-16 bg-blue-600 rounded-r-full z-10" />
+          <div className="
+            relative z-20 ml-4
+            flex flex-row items-center
+            bg-[#0C1117]
+            
+            rounded-2xl
+            pl-6 pr-0 py-0
+            gap-6
+            overflow-hidden
+            min-h-[110px]
+            transition-all duration-300
+            hover:border-cyan-500/50
           ">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-cyan-400/5 rounded-full blur-3xl pointer-events-none" />
 
             {/* Ícone */}
-            <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-[#0D1F2D] border border-cyan-500/30 flex items-center justify-center shadow-[0_0_15px_rgba(0,246,255,0.15)]">
+            <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center">
               <TbPencilStar className="w-7 h-7 text-cyan-400" />
             </div>
 
@@ -98,15 +153,15 @@ export default function Services() {
 
             {/* 3 imagens em sequência sangrando na borda direita/baixo */}
             <div className="absolute sm:relative shrink-0  self-stretch w-44 h-36 sm:h-auto -bottom-8 sm:-bottom-0 right-0">
-            <div className="absolute bottom-0 right-24 w-20 h-full opacity-40 rotate-[-8deg] translate-y-3">
-                <Image src="/type_service/1.png" alt="service" fill loading="lazy" className="object-contain object-bottom" />
-            </div>
-            <div className="absolute bottom-0 right-10 w-24 h-full opacity-70 rotate-[-3deg] translate-y-1">
-                <Image src="/type_service/2.png" alt="service" fill loading="lazy" className="object-contain object-bottom" />
-            </div>
-            <div className="absolute bottom-0 right-0 w-28 h-[115%]">
-                <Image src="/type_service/3.png" alt="service" fill loading="lazy" className="object-contain object-bottom" />
-            </div>
+              <div className="absolute bottom-0 right-24 w-20 h-full opacity-40 rotate-[-8deg] translate-y-3">
+                  <Image src="/type_service/1.png" alt="service" fill loading="lazy" className="object-contain object-bottom" />
+              </div>
+              <div className="absolute bottom-0 right-10 w-24 h-full opacity-70 rotate-[-3deg] translate-y-1">
+                  <Image src="/type_service/2.png" alt="service" fill loading="lazy" className="object-contain object-bottom" />
+              </div>
+              <div className="absolute bottom-0 right-0 w-28 h-[115%]">
+                  <Image src="/type_service/3.png" alt="service" fill loading="lazy" className="object-contain object-bottom" />
+              </div>
             </div>
           </div>
         </div>
@@ -114,11 +169,12 @@ export default function Services() {
         {/* Sub-card 2 */}
         <div className="relative group w-full max-w-2xl">
           <div className="absolute left-0 top-6 w-1 h-16 bg-blue-600 rounded-r-full z-10" />
-          <div className="
+          <div
+            className={`
             relative z-20 ml-4
             flex flex-row items-center
             bg-[#0C1117]
-            border border-gray-700
+            
             rounded-2xl
             pl-6 pr-0 py-0
             gap-6
@@ -127,11 +183,12 @@ export default function Services() {
             transition-all duration-300
             hover:border-cyan-500/50
             hover:shadow-[0_0_30px_rgba(0,246,255,0.08)]
-          ">
+          `}
+          >
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-cyan-400/5 rounded-full blur-3xl pointer-events-none" />
 
             {/* Ícone */}
-            <div className="shrink-0 w-14 h-14 rounded-xl bg-[#0D1F2D] border border-cyan-500/30 flex items-center justify-center shadow-[0_0_15px_rgba(0,246,255,0.15)]">
+            <div className="shrink-0 w-14 h-14 flex items-center justify-center ">
               <TbLayoutGridAdd  className="w-7 h-7 text-cyan-400" />
             </div>
 
@@ -197,18 +254,13 @@ function ServiceCard({ icon: Icon, title, about }: any) {
         "
       >
         {/* Glow de fundo */}
-        <div className="absolute -top-10 -left-10 w-40 h-40 bg-cyan-400/5 rounded-full blur-3xl pointer-events-none" />
 
         {/* Ícone */}
         <div
           className="
             flex-shrink-0
             w-14 h-14
-            rounded-xl
-            bg-[#0D1F2D]
-            border border-cyan-500/30
             flex items-center justify-center
-            shadow-[0_0_15px_rgba(0,246,255,0.15)]
           "
         >
           <Icon className="w-7 h-7 text-cyan-400" />
@@ -219,8 +271,6 @@ function ServiceCard({ icon: Icon, title, about }: any) {
           <h3 className="text-white text-xl font-semibold leading-tight">{title}</h3>
           <p className="text-gray-400 text-sm leading-relaxed">{about}</p>
         </div>
-
-        
       </div>
     </div>
   );

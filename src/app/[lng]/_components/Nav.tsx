@@ -91,8 +91,45 @@ export function JapaneseSvg() {
   );
 }
 
+function MobileMenu({ nav_options, active, setActive, onClose }: any) {
+  return (
+    <div className="fixed inset-0 z-[100] bg-[#F5F5F0] dark:bg-[#03152C] flex flex-col
+                    animate-fade-in-up md:hidden">
+      <div className="flex justify-end p-6">
+        <button onClick={onClose} aria-label="Fechar menu" className="p-2">
+          <svg className="w-6 h-6 text-[#1C1C1C] dark:text-[#F5F5F0]" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <ul className="flex flex-col items-center justify-center flex-1 gap-8">
+        {nav_options.map((o: any, i: number) => (
+          <li key={i}>
+            <a
+              href={o.href}
+              onClick={() => { setActive(o.href); onClose(); }}
+              className={`
+                font-fraunces text-3xl
+                text-[#1C1C1C] dark:text-[#F5F5F0]
+                transition-colors
+                ${active === o.href ? "text-[#C9A24C]" : ""}
+              `}
+            >
+              {o.option}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function Nav() {
   const [active, setActive] = useState<string>("#");
+
+  const [mobileOpen, setMobileOpen] = useState(false);
+
 
   useEffect(() => {
     setActive(window.location.hash || "/#");
@@ -144,8 +181,10 @@ export default function Nav() {
 
   return (
     <nav className="bg-neutral-primary fixed w-full z-200 top-0 start-0 border-b dark:border-0 border-default dark:bg-[#03152C]">
-      <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <button onClick={() => router.push(`/${locale}`)} className="flex items-center rtl:space-x-reverse pl-15 hover:cursor-pointer" type="button">
+      <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+        <button onClick={() => router.push(`/${locale}`)} 
+          className="flex items-center rtl:space-x-reverse hover:cursor-pointer" 
+          type="button">
           <img src="/logo.webp" width={60} height={60} alt="Logo Company Kouki Web" className="h-15 rounded-2xl" />
         </button>
 
@@ -159,7 +198,7 @@ export default function Nav() {
             {CountrySvg()}
           </button>
 
-          <ThemeToggle />
+          {/*<ThemeToggle />*/}
 
           <div className="z-50 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44" id="language-dropdown-menu">
             <ul className="p-2 text-sm text-body font-medium" role="none">
@@ -202,52 +241,52 @@ export default function Nav() {
           </div>
 
           <button
-            data-collapse-toggle="navbar-language"
+            onClick={() => setMobileOpen(true)}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-            aria-controls="navbar-language"
-            aria-expanded="false"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center md:hidden text-white"
+            aria-label="Abrir menu"
           >
             <span className="sr-only">Open main menu</span>
             <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h14" />
             </svg>
           </button>
+
+          {mobileOpen && (
+            <MobileMenu
+              nav_options={nav_options}
+              active={active}
+              setActive={setActive}
+              onClose={() => setMobileOpen(false)}
+            />
+          )}
         </div>
 
         <nav className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
-          <ul
-            className="
-              font-medium flex flex-col md:flex-row
-              mt-4 md:mt-0
-              border border-default md:border-0
-              rounded-b-lg
-              md:rounded-full
-              px-6 py-1 md:px-5
-              md:space-x-5 lg:space-x-10
-              rtl:space-x-reverse
-              bg-transparent
-              dark:bg-white
-            "
-          >
+          <ul className="hidden md:flex items-center gap-8 lg:gap-12">
             {nav_options.map((o, i) => (
-              <li key={i} className="flex">
+              <li key={i} className="relative">
                 <a
                   href={o.href}
                   onClick={() => setActive(o.href)}
                   className={`
-                    inline-flex items-center justify-center
-                    px-3 py-2 rounded-full
-                    transition-colors
-                    text-black 
-                    font-bold
-                    text-[17px]
-                    hover:bg-neutral-200 hover:text-black dark:hover:text-white
-                    ${active === o.href ? "text-blue-600 dark:bg-blue-700 dark:text-white" : "text-black"}
+                    font-abeezee text-sm tracking-wide uppercase
+                    text-[#1C1C1C] dark:text-[#F5F5F0]
+                    transition-colors duration-200
+                    hover:text-[#C9A24C] dark:hover:text-[#C9A24C]
+                    ${active === o.href ? "text-[#C9A24C]" : ""}
                   `}
                 >
                   {o.option}
                 </a>
+                {/* sublinhado que só aparece no item ativo */}
+                <span
+                  className={`
+                    absolute -bottom-1 left-0 h-[1.5px] bg-[#C9A24C]
+                    transition-all duration-300
+                    ${active === o.href ? "w-full" : "w-0"}
+                  `}
+                />
               </li>
             ))}
           </ul>
