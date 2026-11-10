@@ -1,0 +1,35 @@
+/* Pequenos defaults (SOMENTE dentro do template) */
+.model-1-scope {
+  --radius: 18px;
+  --container: 1120px;
+  --bg: #D20A2E;
+  --surface: #101b33;
+  --muted: #a8b3cf;
+  --primary: #4f8cff;
+  --primaryText: #061022;
+  --border: rgba(255,255,255,0.10);
+
+  --fontHeading: ui-sans-serif, system-ui;
+  --fontBody: ui-sans-serif, system-ui;
+
+  /* Equivalente ao seu body */
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Se quiser que o template ocupe a tela toda */
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Se você precisa “smooth scroll”, faça no container */
+.model-1-scope {
+  scroll-behavior: smooth;
+}
+
+/* Se quiser preservar o prefers-color-scheme, também escopado */
+@media (prefers-color-scheme: dark) {
+  .model-1-scope {
+    /* se quiser mudar algo no dark */
+  }
+}

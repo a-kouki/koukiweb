@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "one": "Início",
+    "two": "Serviços",
+    "three": "Produtos Web",
+    "four": "Contato",
+    "five": "Navegação"
+  },
+  "nav_language": {
+    "en": "Inglês",
+    "pt": "Português",
+    "jp": "Japonês",
+    "sp": "Espanhol"
+  },
+  "header": {
+    "one": "Da imaginação à realidade, com um sopro",
+    "two": { "one": "WEB", "two": "SERVIÇOS" },
+    "three": "Criação, gestão e evolução do seu site",
+    "whatsapp": "",
+    "instagram": "",
+    "email": "",
+    "about": "Para negócios que querem vender, mostrar e crescer online",
+    "tema": {
+      "one": "PRESENÇA",
+      "two": "DIGITAL"
+    }
+  },
+  "services": {
+    "title": "MINHA ESPECIALIZAÇÃO",
+    "topic": "Serviço",
+    "topic_2": "SERVIÇOS",
+    "container": {
+      "one": {
+        "about": "Desenvolvemos sites modernos e responsivos, alinhados à identidade da sua marca, com foco em conversão e na experiência do usuário.",
+        "subs": {
+          "one": {
+            "title": "Design Personalizado",
+            "text": "Desenvolvemos seu site do zero, com identidade visual exclusiva e estrutura pensada para o seu negócio. Do layout ao funcionamento, tudo é criado sob medida para sua empresa."
+          },
+          "two": {
+            "title": "Template Profissional",
+            "text": "Layouts prontos e otimizados. Personalizamos com sua marca e oferecemos mensalidade acessível para manter seu site sempre online.",
+            "more":"mais"
+          },
+          "three": {
+            "title": "Sistemas Personalizados",
+            "text": "Dashboards, automações e plataformas de pedidos sob medida — soluções que vão além do site, criadas para o funcionamento real do seu negócio."
+          }
+        }
+      },
+      "two": {
+        "title": "Upgrade de Imagens e Logotipos",
+        "about": "Aprimoramos imagens e logotipos para alcançar maior qualidade, consistência visual e impacto profissional no seu site."
+      }
+    }
+  },
+  "templates": {
+    "topic": "Templates",
+    "topic_2": "TEMPLATES",
+    "text": "Layouts prontos e otimizados, ideais para quem busca rapidez e menor custo. Personalizamos com sua marca e oferecemos mensalidade acessível para manter seu site sempre online.",
+    "models": "Modelo",
+    "modal": { 
+      "close": "fechar", 
+      "alt": "Visualização do template", 
+      "expand": "Ampliar" 
+    }, 
+    "img_labels": 
+    { "overview": "Visão Geral", 
+    "variation_1": "variação 1", 
+    "variation_2": "variação 2", 
+    "variation_3": "variação 3" 
+  },
+    "pagespeed": {
+      "badge": "Diagnóstico de Desempenho",
+      "link_label": "PageSpeed Insights — google.com/speed/pagespeed/insights ↗",
+      "metrics": {
+        "performance": "Desempenho",
+        "accessibility": "Acessibilidade",
+        "best_practices": "Práticas Recomendadas",
+        "seo": "SEO"
+      },
+      "approved_badge": "✓ aprovado",
+      "legend": {
+        "poor": "0–49 · Ruim",
+        "needs_improvement": "50–89 · Melhorar",
+        "good": "90–100 · Bom"
+      }
+    }
+  },
+  "product_web": {
+    "title": "PROJETOS",
+    "subtitle": "Feitos sob medida",
+    "about": "Soluções sob medida para diferentes tipos de negócios, com foco em desempenho, escalabilidade e custo-benefício. Veja alguns exemplos:",
+    "service_sub": "O que está incluso",
+    "services": {
+      "one": {
+        "title": "Manutenção",
+        "about": "Atualizações, correções e melhorias contínuas para manter seu site funcionando perfeitamente."
+      },
+      "two": {
+        "title": "Banco de Dados",
+        "about": "Banco de dados seguro e bem estruturado para armazenar e gerenciar as informações do seu negócio."
+      },
+      "three": {
+        "title": "Domínio",
+        "about": "Auxílio na escolha, configuração e gerenciamento do domínio do seu site."
+      },
+      "four": {
+        "title": "Hospedagem",
+        "about": "Gestão completa da hospedagem, com foco em desempenho, estabilidade e confiabilidade."
+      },
+      "five": {
+        "title": "Acessibilidade",
+        "about": "Boas práticas para garantir que seu site seja acessível em diferentes dispositivos e para públicos diversos."
+      },
+      "six": {
+        "title": "Velocidade",
+        "about": "Otimização do tempo de carregamento para melhorar a experiência do usuário e o SEO."
+      },
+      "seven": {
+        "title": "Segurança",
+        "about": "Medidas de proteção e boas práticas para manter seu site seguro e confiável."
+      }
+    },
+    "languages": {
+      "title": "Tecnologias",
+      "about": "As tecnologias mais modernas e avançadas utilizadas no desenvolvimento do seu site.",
+      "about_company": "Empresas que utilizam essas mesmas tecnologias:"
+    },
+    "productPage": {
+      "one": "Veja mais!",
+      "two": "Alguns modelos disponíveis"
+    },
+    "showcase": {
+      "badge": "SITES PROFISSIONAIS",
+      "title": "Mais do que um site. Uma plataforma para o seu negócio.",
+      "about": "Sites modernos desenvolvidos para apresentar seus produtos, fortalecer sua marca e facilitar a gestão do conteúdo através de ferramentas administrativas intuitivas.",
+      "catalog": {
+        "title": "Catálogo de Produtos",
+        "about": "Produtos organizados de forma clara e profissional para facilitar a navegação e ajudar seus clientes a encontrarem o que procuram."
+      },
+      "details": {
+        "title": "Páginas de Detalhes",
+        "about": "Apresente informações, imagens e características importantes dos seus produtos em uma experiência completa e atrativa."
+      },
+      "mobile": {
+        "title": "Experiência Mobile",
+        "about": "Navegação rápida e intuitiva para usuários que acessam seu site através de smartphones e tablets."
+      },
+      "responsive": {
+        "title": "Design Responsivo",
+        "about": "Layouts adaptados para diferentes tamanhos de tela, garantindo uma experiência consistente em qualquer dispositivo."
+      }
+    },
+    "management": {
+      "badge": "GESTÃO DE CONTEÚDO",
+      "title": "Controle total do seu site em um só lugar.",
+      "about": "Ferramentas administrativas desenvolvidas para simplificar a atualização de produtos, informações e conteúdos, tanto no computador quanto no celular.",
+      "dashboard": {
+        "title": "Painel Administrativo Inteligente",
+        "about": "Gerencie produtos, informações e conteúdos do seu site através de uma interface intuitiva, desenvolvida para facilitar a administração do seu negócio."
+      },
+      "mobile": {
+        "title": "Gestão em Qualquer Dispositivo",
+        "about": "Acesse e atualize seu catálogo pelo celular ou computador, mantendo seu site sempre atualizado com praticidade e agilidade."
+      }
+    },
+    "system":{
+      "title":"Para as suas necessidades",
+      "subtitle":"Sistemas sob medida",
+      "about":"Cada negócio funciona de um jeito diferente, por isso, cada sistema é desenhado em torno da forma como você já trabalha, não o contrário. Abaixo, alguns exemplos de funcionalidades já implementadas em projetos reais:",
+      "list":{
+        "one":{"title":"Gestão" , "list":{"one":"Cadastro e organização de produtos", "two":"Categorias personalizadas"}},
+        "two":{"title":"Automação & Pedidos" , "list":{"one":"Rastreamento de pedidos", "two":"Sistemas específicos para gestão de ordens"}},
+        "three":{"title":"Métricas" , "list":{"one":"Métricas de desempenho em tempo real", "two":"Acompanhamento de ticket médio"}}
+      },
+      "more":"Essas são só algumas possibilidades, cada solução é desenhada em torno do que o seu negócio realmente precisa."
+    }
+  },
+  "upgrade_img": {
+    "title": "Upgrade",
+    "subtitle": "Upgrade de Imagens",
+    "about": "Serviço especializado no aprimoramento de imagens de produtos e logotipos, com foco em qualidade visual, nitidez e impacto profissional. Confira alguns exemplos de antes e depois:",
+    "after": "Depois",
+    "before": "Antes",
+    "logo": {
+      "title": {
+        "one": "Deseja criar ou",
+        "two": "atualizar um logotipo?"
+      },
+      "about": "Crie um novo logotipo ou aprimore o seu atual em diferentes estilos e formatos."
+    },
+    "example": "Exemplo de Modelo",
+    "manyStyle": "Você pode ter o logotipo da sua empresa ou serviço em diversos estilos",
+    "season": {
+      "title": "Estações",
+      "inverno": "Inverno",
+      "outono": "Outono",
+      "primavera": "Primavera",
+      "verao": "Verão"
+    },
+    "cool": {
+      "one": "Veja como",
+      "two": "incrível",
+      "three": "isso",
+      "four": "pode",
+      "five": "ficar!"
+    },
+    "specialData": {
+      "title": "Datas Especiais",
+      "chrismass": "Natal",
+      "newYear": "Ano Novo",
+      "valent": "Dia dos Namorados",
+      "soccer": "Copa"
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "sub": "FALE COMIGO",
+    "subtitle": {
+      "one": "Vamos falar sobre",
+      "two": "seu",
+      "three": "próximo projeto"
+    },
+    "whatsapp": "Vamos criar o seu site",
+    "insta": "Veja mais!"
+  },
+  "foot": {
+    "title": {
+      "one": "Vamos",
+      "two": "nos conectar"
+    },
+    "subtitle": "Entre em contato e dê o próximo passo para fortalecer sua presença digital com soluções modernas e eficientes."
+  }
+}
