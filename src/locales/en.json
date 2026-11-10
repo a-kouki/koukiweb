@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Kouki Web | Custom websites and systems",
+    "description": "Custom websites and systems for small and mid-sized businesses. A fixed quote before I start, with hosting, maintenance and security included."
+  },
+  "skip": "Skip to content",
+  "nav": {
+    "label": "Main",
+    "services": "Services",
+    "process": "Process",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Custom websites and systems",
+    "lead": "I build websites and systems for small and mid-sized businesses, and look after them once they’re live.",
+    "primary": "Request a quote",
+    "secondary": "See services"
+  },
+  "demo": {
+    "greeting": "Hello, {n}",
+    "included": [
+      "Domain", 
+      "Hosting", 
+      "Database", 
+      "Maintenance", 
+      "Security", 
+      "Speed", 
+      "Accessibility"
+    ],
+    "includedTitle": "Included in every project",
+    "imageAlt":"Example of a system dashboard",
+    "includedFooter":"A fixed quote before I start."
+  },
+  "statement": "One professional, from the first conversation to keeping your site running.",
+  "works": {
+    "title": "Selected work",
+    "pause": "Pause animation",
+    "items":[]
+  },
+  "typeAndSee": {
+    "title": "Your business in many languages",
+    "hint": "Your site in any language, and as many as you need. These are just a few examples."
+  },
+  "services": {
+    "title": "What you can ask for",
+    "items": [
+      {
+        "title": "Custom design",
+        "text": "Your website built from scratch, with its own identity and a structure designed around your business."
+      },
+      {
+        "title": "Custom systems",
+        "text": "Dashboards, automations and order management designed around how your company works."
+      },
+      {
+        "title": "Admin panel",
+        "text": "Update products and content from your computer or phone, without depending on anyone."
+      }
+    ],
+    "images": {
+      "title": "Imagens",
+      "alts": []
+    }
+  },
+  "scenarios": {
+    "title": "How I can help",
+    "items": [
+      {
+        "title": "New website",
+        "text": "Starting out or rebuilding your site? I build it from scratch, with a fixed quote before I start."
+      },
+      {
+        "title": "Custom system",
+        "text": "Spreadsheets and repetitive tasks eating your time? I build a system or automation around how you work."
+      },
+      {
+        "title": "Website upgrade",
+        "text": "Already have a site that’s slow, outdated or hard to edit? I improve what you already have."
+      }
+    ]
+  },
+  "steps": {
+    "title": "How it works",
+    "items": [
+      {
+        "title": "Understand",
+        "text": "You tell me what you need. I listen, answer your questions and suggest what makes sense."
+      },
+      {
+        "title": "Build",
+        "text": "With the quote agreed, I design and build your website or system."
+      },
+      {
+        "title": "Launch",
+        "text": "I put everything live, with domain, hosting and security set up."
+      },
+      {
+        "title": "Evolve",
+        "text": "Once it’s live, I handle maintenance and any adjustments and improvements that come up."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How long does it take?",
+        "answer": "It depends on the size of the project. Tell me what you need and I’ll give you an estimate."
+      },
+      {
+        "question": "How much does it cost?",
+        "answer": "Every project is different, so I send a fixed quote before I start."
+      },
+      {
+        "question": "What is included?",
+        "answer": "In every project: domain, hosting, database, maintenance, security, speed and accessibility."
+      },
+      {
+        "question": "Which languages can my site be in?",
+        "answer": "Any language, and as many as you need. The four on this site are just examples."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Tell me what you need and get a quote",
+    "whatsapp": "Message on WhatsApp",
+    "instagram": "See Instagram",
+    "message": "Hi! I came from your website and would like a quote.",
+    "photoAlt": "Portrait of the developer",
+    "newTab": "opens in a new tab"
+  },
+  "footer": {
+    "text": "Custom websites and systems for small and mid-sized businesses.",
+    "columns": [
+      "Navigation",
+      "Contact",
+      "Language"
+    ],
+    "rights": "© 2026 Kouki Web"
+  }
+}

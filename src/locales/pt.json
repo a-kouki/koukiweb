@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "Kouki Web | Sites e Sistemas sob medida",
+    "description": "Sites e Sistemas sob medida para pequenas e médias empresas. Orçamento fechado antes de começar, com hospedagem, manutenção e segurança incluídas."
+  },
+  "skip": "Ir para o conteúdo",
+  "nav": {
+    "label": "Principal",
+    "services": "Serviços",
+    "process": "Processo",
+    "faq": "FAQ",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Sites e sistemas sob medida",
+    "lead": "Crio sites e sistemas para pequenas e médias empresas, e cuido deles depois que estão no ar.",
+    "primary": "Pedir orçamento",
+    "secondary": "Ver serviços"
+  },
+  "demo": {
+    "greeting": "Olá, {n}",
+    "included": [
+      "Domínio",
+      "Hospedagem",
+      "Banco de dados",
+      "Manutenção",
+      "Segurança",
+      "Velocidade",
+      "Acessibilidade"
+    ],
+    "includedTitle": "Incluso em todo projeto",
+    "imageAlt":"Exemplo de dashboard de um sistema",
+    "includedFooter":"Orçamento fechado antes de começar."
+  },
+  "statement": "Um só profissional, do primeiro contato à manutenção do seu site.",
+  "works": {
+    "title": "Alguns trabalhos",
+    "pause": "Pausar animação",
+    "items":[]
+  },
+  "typeAndSee": {
+    "title": "Seu negócio em vários idiomas",
+    "hint": "Seu site em qualquer idioma e na quantidade que você precisar. Estes são só alguns exemplos."
+  },
+  "services": {
+    "title": "O que você pode pedir",
+    "items": [
+      {
+        "title": "Design personalizado"
+      },
+      {
+        "title": "Sistemas sob medida",
+        "text": "Dashboards, automações e controle de pedidos desenhados para o jeito como a sua empresa trabalha."
+      },
+      {
+        "title": "Painel administrativo",
+        "text": "Atualize produtos e conteúdos do seu site pelo computador ou pelo celular, sem depender de ninguém."
+      },
+      {
+        "title": "Imagens",
+        "text": "Melhoro fotos de produtos e crio imagens para transmitir uma imagem mais profissional."
+      }
+    ],
+    "images": {
+      "title": "Imagens",
+      "alts": []
+    }
+  },
+  "scenarios": {
+    "title": "Em que posso ajudar",
+    "items": [
+      {
+        "title": "Site novo",
+        "text": "Está começando ou quer refazer o site? Eu crio do zero, com orçamento fechado antes de começar."
+      },
+      {
+        "title": "Sistema sob medida",
+        "text": "Planilhas e tarefas repetitivas tomando o seu tempo? Eu monto um sistema ou uma automação para o seu jeito de trabalhar."
+      },
+      {
+        "title": "Melhoria de site",
+        "text": "Já tem um site, mas ele está lento, desatualizado ou difícil de editar? Eu melhoro o que já existe."
+      }
+    ]
+  },
+  "steps": {
+    "title": "Como funciona",
+    "items": [
+      {
+        "title": "Entender",
+        "text": "Você conta o que precisa. Eu escuto, tiro as dúvidas e indico o que faz sentido."
+      },
+      {
+        "title": "Criar",
+        "text": "Com o orçamento fechado, eu desenho e construo o seu site ou sistema."
+      },
+      {
+        "title": "Lançar",
+        "text": "Publico tudo no ar, com domínio, hospedagem e segurança configurados."
+      },
+      {
+        "title": "Evoluir",
+        "text": "Depois de no ar, cuido da manutenção e faço os ajustes e melhorias que surgirem."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "question": "Quanto tempo leva?",
+        "answer": "Depende do tamanho do projeto. Me conte o que você precisa e eu passo uma estimativa."
+      },
+      {
+        "question": "Quanto custa?",
+        "answer": "Cada projeto é diferente, por isso envio um orçamento fechado antes de começar."
+      },
+      {
+        "question": "O que está incluso?",
+        "answer": "Em todo projeto: domínio, hospedagem, banco de dados, manutenção, segurança, velocidade e acessibilidade."
+      },
+      {
+        "question": "Em quais idiomas o site pode ficar?",
+        "answer": "Em qualquer idioma e na quantidade que você precisar. Os quatro deste site são só exemplos."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Conte o que você precisa e receba um orçamento",
+    "whatsapp": "Falar no WhatsApp",
+    "instagram": "Ver o Instagram",
+    "message": "Olá! Vim pelo site e gostaria de um orçamento.",
+    "photoAlt": "Retrato do desenvolvedor",
+    "newTab": "abre em nova aba"
+  },
+  "footer": {
+    "text": "Sites e sistemas sob medida para pequenas e médias empresas.",
+    "columns": [
+      "Navegação",
+      "Contato",
+      "Idioma"
+    ],
+    "rights": "© 2026 Kouki Web"
+  }
+}

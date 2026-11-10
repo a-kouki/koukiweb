@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+/* Tokens (design-system.md). O tema segue o sistema do visitante. */
+:root {
+  --bg: oklch(98.5% 0.002 250);
+  --sf: oklch(95.5% 0.003 250);
+  --ink: oklch(21% 0.008 255);
+  --mu: oklch(42% 0.01 255);
+  --ln: oklch(90% 0.004 250);
+  --bd: oklch(60% 0.01 255); /* borda de controles: >= 3:1 */
+  --ac: oklch(52% 0.21 27); /*--ac: oklch(38.167% 0.25142 268.117);*/
+  --ac-h: oklch(45% 0.2 27);
+  --fd: oklch(19% 0.008 255);
+  --f1: oklch(93% 0.003 250);
+  --f2: oklch(80% 0.005 250);
+  --f3: oklch(46% 0.008 255);
+  --f4: oklch(21% 0.008 255);
+  --r: 16px;
+  --R: 24px;
+  --m: clamp(16px, 2.5vw, 32px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: oklch(17% 0.008 255);
+    --sf: oklch(23% 0.008 255);
+    --ink: oklch(95% 0.003 250);
+    --mu: oklch(74% 0.008 255);
+    --ln: oklch(30% 0.008 255);
+    --bd: oklch(56% 0.01 255);
+  }
+}
+
+@theme inline {
+  --color-page: var(--bg);
+  --color-surface: var(--sf);
+  --color-ink: var(--ink);
+  --color-muted: var(--mu);
+  --color-line: var(--ln);
+  --color-edge: var(--bd);
+  --color-accent: var(--ac);
+  --color-accent-hover: var(--ac-h);
+  --color-footer: var(--fd);
+  --color-step-1: var(--f1);
+  --color-step-2: var(--f2);
+  --color-step-3: var(--f3);
+  --color-step-4: var(--f4);
+
+  /* Vocabulário de formas: 8 (selo), 16 (cartão), 24 (painel), pílula */
+  --radius-sm: 8px;
+  --radius-card: var(--r);
+  --radius-panel: var(--R);
+  --radius-pill: 9999px;
+
+  --container-page: 80rem; /* 1280px */
+
+  /* Pesos fracionados (fontes variáveis) */
+  --font-weight-w440: 440;
+  --font-weight-w456: 456;
+  --font-weight-w652: 652;
+
+  --font-display: var(--font-headline), var(--font-jp), system-ui, sans-serif;
+  --font-sans: var(--font-text), var(--font-jp), system-ui, sans-serif;
+
+  --text-small: 0.875rem;
+  --text-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --text-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --text-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --text-head-sm: clamp(1.75rem, 1.2rem + 2.2vw, 3rem); /* título em meia coluna */
+
+  --breakpoint-md: 56.25rem; /* 900px: único breakpoint */
+}
+
+/*remover*/
+@theme {
+  --animate-marquee: marquee 40s linear infinite; 
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(4.5rem + env(safe-area-inset-top));
+    color-scheme: light dark;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: 1.5;
+    letter-spacing: 0.013em;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.011em;
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+  h1 { font-weight: 652; }
+  h2 { font-weight: 600; }
+  h3 { font-weight: 456; }
+  :focus-visible {
+    outline: 2px solid var(--focus, var(--ink)); /* o rodapé define --focus: branco */
+    outline-offset: 3px;
+  }
+  a, button, summary {
+    -webkit-tap-highlight-color: color-mix(in oklab, var(--ink) 12%, transparent);
+  }
+  button, input, summary {
+    touch-action: manipulation;
+  }
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  left: var(--m);
+  top: 8px;
+  z-index: 50;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 8px 12px;
+  border-radius: var(--r);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/*TypeAndSee*/
+@keyframes flag-in {
+  from { opacity: 0; filter: blur(8px); transform: translateY(8px); }
+  to   { opacity: 1; filter: blur(0);   transform: none; }
+}
+@keyframes flag-out {
+  from { opacity: 1; filter: blur(0);   transform: none; }
+  to   { opacity: 0; filter: blur(8px); transform: translateY(-8px); }
+}
+.flag-in  { animation: flag-in 600ms ease-out both; }
+.flag-out { animation: flag-out 400ms ease-in both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .flag-in, .flag-out { animation: none; }
+}
