@@ -5,18 +5,18 @@ import LangSwitch from "./ui/LangSwitch";
 
 export default function Foot({ lng, t }: { lng: Locale; t: Dict }) {
   const [navTitle, contactTitle, langTitle] = t.footer.columns;
-  const title = "mb-2 text-small text-white/70";
+  const title = "mb-2 text-small text-on-dark/70";
   const link = "block py-3 hover:underline";
   const ext = { target: "_blank", rel: "noopener noreferrer" } as const;
   const newTab = <span className="sr-only"> ({t.contact.newTab})</span>;
 
   return (
-    <footer className="[--focus:#fff] bg-footer pb-[calc(24px+env(safe-area-inset-bottom))] pt-[clamp(40px,6vw,72px)] text-white/90">
+    <footer className="[--focus:#fff] bg-footer pb-[calc(24px+env(safe-area-inset-bottom))] pt-[clamp(40px,6vw,72px)] text-on-dark/90">
       <div className="mx-auto max-w-page px-(--m)">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="col-span-2 md:col-span-1">
             <p translate="no" className="font-display text-3xl font-semibold">kouki&nbsp;web.</p>
-            <p className="mt-3 max-w-[28ch] text-white/70">{t.footer.text}</p>
+            <p className="mt-3 max-w-[28ch] text-on-dark/70">{t.footer.text}</p>
           </div>
           <nav aria-label={navTitle}>
             <p className={title}>{navTitle}</p>
@@ -40,7 +40,7 @@ export default function Foot({ lng, t }: { lng: Locale; t: Dict }) {
             <LangSwitch lng={lng} label={langTitle} tone="onDark" />
           </div>
         </div>
-        <p translate="no" className="mt-12 text-small text-white/70">{t.footer.rights}</p>
+        <p translate="no" className="mt-12 text-small text-on-dark/70">{t.footer.rights}</p>
       </div>
     </footer>
   );

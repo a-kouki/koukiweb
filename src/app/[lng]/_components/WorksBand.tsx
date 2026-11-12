@@ -119,7 +119,7 @@ export default function WorksBand({ title, pauseLabel, alts, items  }: Props) {
           {group(true)}
         </div>
       </div>
-      <div className="mt-4 flex justify-center motion-reduce:hidden">
+      <div className="mt-4 mb-4 flex justify-center motion-reduce:hidden">
         <Button
           variant="panel"
           aria-pressed={paused}

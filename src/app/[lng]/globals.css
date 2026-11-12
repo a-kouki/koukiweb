@@ -20,15 +20,15 @@
   --m: clamp(16px, 2.5vw, 32px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: oklch(17% 0.008 255);
-    --sf: oklch(23% 0.008 255);
-    --ink: oklch(95% 0.003 250);
-    --mu: oklch(74% 0.008 255);
-    --ln: oklch(30% 0.008 255);
-    --bd: oklch(56% 0.01 255);
-  }
+/* Tema claro fixo. Para reativar o escuro: <html data-theme="dark">
+   (antes, revisar --f1..--f4 e --fd no escuro) */
+:root[data-theme="dark"] {
+  --bg: oklch(17% 0.008 255);
+  --sf: oklch(23% 0.008 255);
+  --ink: oklch(95% 0.003 250);
+  --mu: oklch(74% 0.008 255);
+  --ln: oklch(30% 0.008 255);
+  --bd: oklch(56% 0.01 255);
 }
 
 @theme inline {
@@ -45,6 +45,10 @@
   --color-step-2: var(--f2);
   --color-step-3: var(--f3);
   --color-step-4: var(--f4);
+
+  /* Texto sobre superfícies de cor fixa (Steps, rodapé): não muda com o tema */
+  --color-on-light: oklch(21% 0.008 255);
+  --color-on-dark: oklch(97% 0.002 250);
 
   /* Vocabulário de formas: 8 (selo), 16 (cartão), 24 (painel), pílula */
   --radius-sm: 8px;
@@ -84,8 +88,14 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: calc(4.5rem + env(safe-area-inset-top));
-    color-scheme: light dark;
+    color-scheme: light;
+    -webkit-text-size-adjust: 100%;
   }
+
+  html[data-theme="dark"] {
+    color-scheme: dark;
+  }
+
   body {
     background: var(--bg);
     color: var(--ink);

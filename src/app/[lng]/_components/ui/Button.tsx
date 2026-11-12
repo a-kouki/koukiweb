@@ -7,7 +7,7 @@ const base =
   "inline-flex min-h-11 items-center justify-center gap-2 rounded-pill px-5 font-semibold transition-[background-color,color,transform] duration-150 active:translate-y-px";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-accent text-white hover:bg-accent-hover",
+  primary: "bg-accent text-on-dark hover:bg-accent-hover",
   secondary: "border border-ink text-ink hover:bg-surface",
   // Dentro de painéis cinza (bg-surface) o hover precisa de outro tom.
   panel: "border border-ink text-ink hover:bg-page",

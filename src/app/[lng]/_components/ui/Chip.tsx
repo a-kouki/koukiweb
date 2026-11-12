@@ -11,7 +11,7 @@ const tones: Record<Tone, string> = {
   default:
     "text-muted hover:text-ink aria-[current=true]:bg-surface aria-[current=true]:text-ink aria-[pressed=true]:bg-surface aria-[pressed=true]:text-ink aria-[current=true]:underline aria-[current=true]:underline-offset-4 aria-[pressed=true]:underline aria-[pressed=true]:underline-offset-4",
   onDark:
-    "text-white/70 hover:text-white aria-[current=true]:bg-white/10 aria-[current=true]:text-white aria-[pressed=true]:bg-white/10 aria-[pressed=true]:text-white aria-[current=true]:underline aria-[current=true]:underline-offset-4 aria-[pressed=true]:underline aria-[pressed=true]:underline-offset-4",
+    "text-on-dark/70 hover:text-on-dark aria-[current=true]:bg-white/10 aria-[current=true]:text-on-dark aria-[pressed=true]:bg-white/10 aria-[pressed=true]:text-on-dark aria-[current=true]:underline aria-[current=true]:underline-offset-4 aria-[pressed=true]:underline aria-[pressed=true]:underline-offset-4",
 };
 
 type ChipProps = {

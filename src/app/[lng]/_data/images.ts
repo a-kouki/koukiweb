@@ -39,3 +39,31 @@ export const IMAGES: Work[] = [
   { id: "w9", kind: "phone", src: w12 },
 ];
 
+import w20 from '../../../../public/photos/chatgpt/360view.png'
+import w21 from '../../../../public/photos/chatgpt/billboard.png'
+import w22 from '../../../../public/photos/chatgpt/cinematic.png'
+import w23 from '../../../../public/photos/chatgpt/cleanflyer.png'
+import w24 from '../../../../public/photos/chatgpt/handwritten-en.png'
+import w25 from '../../../../public/photos/chatgpt/handwritten-jp.png'
+import w26 from '../../../../public/photos/chatgpt/handwritten.png'
+import w27 from '../../../../public/photos/chatgpt/instagramAd.png'
+import w28 from '../../../../public/photos/chatgpt/magazinecover-en.png'
+import w29 from '../../../../public/photos/chatgpt/magazinecover.png'
+import w30 from '../../../../public/photos/chatgpt/metaads-en.png'
+import w31 from '../../../../public/photos/chatgpt/metaads.png'
+
+export const IMAGES_TWO: Work[] = [
+  { id: "w20", kind: "phone", src: w20 },
+  { id: "w21", kind: "phone", src: w21 },
+  { id: "w22", kind: "phone", src: w22 },
+  { id: "w23", kind: "phone", src: w23 },
+  { id: "w24", kind: "phone", src: w24 },
+  { id: "w25", kind: "phone", src: w25 },
+  { id: "w26", kind: "phone", src: w26 },
+  { id: "w27", kind: "phone", src: w27 },
+  { id: "w28", kind: "phone", src: w28 },
+  { id: "w29", kind: "phone", src: w29 },
+  { id: "w30", kind: "phone", src: w30 },
+  { id: "w31", kind: "phone", src: w31 },
+]
+

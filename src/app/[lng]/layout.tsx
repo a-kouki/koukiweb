@@ -34,6 +34,11 @@ const jp = Noto_Sans_JP({
   preload: false,
 });
 
+export const viewport: Viewport = {
+  colorScheme: "light",
+  themeColor: "#fafafa",
+};
+
 const SITE_URL = "https://koukiwebservice.com";
 const GTM_ID = "GTM-MKQ2KPM4";
 const GA_ID = "G-GW5HL2EVE4";

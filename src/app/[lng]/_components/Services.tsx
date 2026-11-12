@@ -1,5 +1,5 @@
 import type { Dict } from "@/i18n/dictionaries";
-import { IMAGES } from "../_data/images";
+import { IMAGES, IMAGES_TWO } from "../_data/images";
 import WorksBand from "./WorksBand";
 import { Panel } from "./ui/Panel";
 import { Reveal } from "./ui/Reveal";
@@ -24,6 +24,7 @@ export default function Services({ t, pause }: Props) {
           <li className="border-y border-line py-6">
             <Panel className="mt-6">
               <WorksBand title={t.images.title} pauseLabel={pause} alts={t.images.alts} items={IMAGES} />
+              <WorksBand title={t.images.title} pauseLabel={pause} alts={t.images.alts} items={IMAGES_TWO} />
             </Panel>
           </li>
         </ul>
